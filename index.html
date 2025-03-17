@@ -9,19 +9,49 @@
   <body>
     <header class="page header">
       <h1>Welcome to my Website</h1>
-      <nav>
+      <nav aria-label="Main Navigation">
         <ul>
-          <li><a href="index.html" class="u-url">Home</a></li>
-          <li><a href="Blogs/MainBlogPage.html" class="u-url">Blogs</a></li>
           <li>
-            <a href="Portfolio/portfolio.html" class="u-url">Portfolio</a>
+            <a href="../index.html" class="u-url" aria-label="Home Page"
+              >Home</a
+            >
           </li>
-          <li><a href="Design/DesignPage.html" class="u-url">Design</a></li>
-          <li><a href="Essays/EssaysPage.html" class="u-url">Essays</a></li>
+          <li>
+            <a
+              href="../Blogs/MainBlogPage.html"
+              class="u-url"
+              aria-label="Blogs Page"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Portfolio/portfolio.html"
+              class="u-url"
+              aria-label="Portfolio Page"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Design/DesignPage.html"
+              class="u-url"
+              aria-label="Design Page"
+              >Design</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Essays/EssaysPage.html"
+              class="u-url"
+              aria-label="Essays Page"
+              >Essays</a
+            >
+          </li>
         </ul>
       </nav>
-      <a href="#About">About</a>
-      <a href="#Contact">Contact</a>
+      <a href="#About" data-link="About" role="Link">About</a>
+      <a href="#Contact" data-link="Contact" role="link">Contact</a>
     </header>
 
     <main>
@@ -33,31 +63,34 @@
           width="320"
           height="355"
           class="u-photo"
+          data-photo="Selfie of me"
         />
       </figure>
 
-      <section class="h-details">
+      <section class="h-details" data-section="profile">
         <table>
           <tr>
             <td>Name:</td>
-            <td class="p-name">Kulani Khoza</td>
+            <td class="p-name" data-Wesite-Developer="Kulani">Kulani Khoza</td>
           </tr>
           <tr>
             <td>School:</td>
-            <td class="p-school">University of Witwatersrand</td>
+            <td class="p-school" data-school="University">
+              University of Witwatersrand
+            </td>
           </tr>
           <tr>
             <td>City:</td>
-            <td class="p-city">Johannesburg</td>
+            <td class="p-city" data-text="location">Johannesburg</td>
           </tr>
           <tr>
             <td>Country:</td>
-            <td class="p-country">South Africa</td>
+            <td class="p-country" data-text="location">South Africa</td>
           </tr>
         </table>
 
         <header>
-          <h2 id="About" class="h-About">About me</h2>
+          <h2 id="About" class="h-About" data-text="About me">About me</h2>
         </header>
         <section>
           <article>
@@ -75,13 +108,15 @@
       </section>
 
       <section>
-        <h2 id="Contact">Contact Information</h2>
+        <h2 id="Contact" data-heading="ContactDetails">Contact Information</h2>
         <p>Where you can find me:</p>
 
         <table>
           <tr>
             <td>Email:</td>
-            <td class="u-email">2662588@students.wits.ac.za</td>
+            <td class="u-email" data-link="email" role="contact">
+              2662588@students.wits.ac.za
+            </td>
           </tr>
         </table>
       </section>
@@ -90,7 +125,7 @@
   <footer>
     <nav class="Home-nav-buttons">
       <a href="Blogs/MainBlogPage.html">
-        <button>Next Page →</button>
+        <button data-button="NextPage" role="button">Next Page →</button>
       </a>
     </nav>
   </footer>

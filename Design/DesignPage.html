@@ -7,13 +7,34 @@
   </head>
   <body>
     <header>
-      <a href="../index.html" class="u-url">Home</a>
-      <a href="../Blogs/MainBlogPage.html" class="u-url">Blogs</a>
-      <a href="../Portfolio/portfolio.html" class="u-url">Portfolio</a>
-      <a href="../Design/DesignPage.html" class="u-url">Design</a>
-      <a href="../Essays/EssaysPage.html" class="u-url">Essays</a>
-
-      <h1>Design</h1>
+      <nav aria-label="Main Navigation">
+        <a href="../index.html" class="u-url" aria-label="Home Page">Home</a>
+        <a
+          href="../Blogs/MainBlogPage.html"
+          class="u-url"
+          aria-label="Blogs Page"
+          >Blogs</a
+        >
+        <a
+          href="../Portfolio/portfolio.html"
+          class="u-url"
+          aria-label="Portfolio Page"
+          >Portfolio</a
+        >
+        <a
+          href="../Design/DesignPage.html"
+          class="u-url"
+          aria-label="Design Page"
+          >Design</a
+        >
+        <a
+          href="../Essays/EssaysPage.html"
+          class="u-url"
+          aria-label="Essays Page"
+          >Essays</a
+        >
+      </nav>
+      <h1 data-heading="DesignPageName">Design</h1>
     </header>
     <main>
       <section>
@@ -40,6 +61,7 @@
             width="500"
             height="355"
             class="u-WireframeImage"
+            data-feedback="Wireframe"
           />
         </figure>
         <article>
@@ -66,7 +88,7 @@
             latest blog post or current project in my portfolio.
           </p>
         </article>
-        <article>
+        <article data-feedback="Notes 1">
           Feedback:
           <ul>
             <li>
@@ -92,6 +114,7 @@
             width="500"
             height="355"
             class="u-WireframeImage"
+            data-photo="Wireframe"
           />
         </figure>
         <article>
@@ -104,7 +127,7 @@
             wheel will ensure the user can access each blog individually.
           </p>
         </article>
-        <article>
+        <article data-feedback="Notes 2">
           Feedback:
           <ul>
             <li>
@@ -128,10 +151,11 @@
             width="500"
             height="355"
             class="u-WireframeImage"
+            data-photo="Wireframe"
           />
         </figure>
         <article>
-          <p>
+          <p class="p-summaryofPorfolio">
             More clickable image, one for each section of work for my portfolio
             work. One for Game design ,One for 3D modelling and One for
             electronic projects. Each spaced evenly from one another. Each with
@@ -151,6 +175,7 @@
                   width="500"
                   height="355"
                   class="u-WireframeImage"
+                  data-photo="Wireframe"
                 />
                 <figcaption>Wireframe of DesignPage</figcaption>
               </figure>
@@ -163,6 +188,7 @@
                   width="500"
                   height="355"
                   class="u-WireframeImage"
+                  data-photo="Wireframe"
                 />
                 <figcaption>Wireframe of EssayPage</figcaption>
               </figure>
@@ -179,6 +205,7 @@
             width="500"
             height="355"
             class="u-photo"
+            data-photo="userflow"
           />
           <figcaption>Flow diagram of UserFlow</figcaption>
         </figure>
@@ -192,6 +219,7 @@
             width="350"
             height="355"
             class="u-photo"
+            data-photo="InformationStructure"
           />
           <figcaption>Image of Information structure</figcaption>
         </figure>
@@ -199,7 +227,7 @@
     </main>
   </body>
   <footer>
-    <nav class="Design-nav-buttons">
+    <nav class="Design-nav-buttons" data-buttons="Next&Previous">
       <a href="../Portfolio/portfolio.html">
         <button>← Previous Page</button>
       </a>
