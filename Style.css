@@ -1,3 +1,91 @@
-.Heading {
-  color: rgb(255, 179, 0);
+* {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  justify-content: space-between;
+  align-content: center;
+}
+.Logo {
+  width: 110px;
+  height: 80px;
+  padding-left: 20px;
+  padding-right: 25px;
+  margin: 0 20px;
+}
+nav {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding-left: 0px;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 30px;
+}
+nav ul {
+  list-style: none;
+  margin: 0 30px;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0;
+  padding-right: 50%;
+}
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li a {
+  color: rgb(3, 3, 3);
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: sans-serif;
+  margin-right: 20px;
+}
+nav ul li a:hover {
+  background-color: rgb(87, 98, 241);
+  display: block;
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.Self {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ContactButton {
+  background-color: black;
+  margin-left: 10px;
+  border-radius: 150px;
+  padding: 10px;
+  display: inline-block;
+  padding-bottom: 5px;
+  padding-top: 2px;
+  margin-top: 2px;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.ContactButton a {
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.ContactButton a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
 }

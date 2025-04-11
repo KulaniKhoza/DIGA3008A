@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Description of Website when Googled" />
     <title>Kulanis Website</title>
+    <link rel="stylesheet" href="Style.css" />
   </head>
   <body>
     <header class="page header">
-      <h1>Welcome to my Website</h1>
-      <nav aria-label="Main Navigation">
+      <nav class="menu" aria-label="Main Navigation">
         <ul>
+          <img
+            src="Images/Logo.png"
+            alt="Logo"
+            class="Logo"
+            data-photo="Selfie of me"
+          />
+
           <li>
             <a href="index.html" class="u-url" aria-label="Home Page">Home</a>
           </li>
@@ -46,6 +53,11 @@
               >Essays</a
             >
           </li>
+          <li>
+            <button class="ContactButton">
+              <a href="#Contact">Contact</a>
+            </button>
+          </li>
         </ul>
       </nav>
       <a href="#About" data-link="About" role="Link">About</a>
@@ -53,6 +65,7 @@
     </header>
 
     <main>
+      <h1>Welcome to my Website</h1>
       <h2>Profile:</h2>
       <figure>
         <img
@@ -60,7 +73,7 @@
           alt="Profile photo of me"
           width="360"
           height="355"
-          class="u-photo"
+          class="Self"
           data-photo="Selfie of me"
         />
       </figure>
