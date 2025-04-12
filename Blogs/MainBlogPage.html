@@ -4,54 +4,185 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blogs</title>
+    <link rel="stylesheet" href="../Style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="Blogs.css" />
   </head>
+
   <body>
-    <header>
-      <nav aria-label="Main Navigation">
-        <a href="../index.html" class="u-url" aria-label="Home Page">Home</a>
-        <a href="MainBlogPage.html" class="u-url" aria-label="Blogs Page"
-          >Blogs</a
-        >
-        <a
-          href="../Portfolio/portfolio.html"
-          class="u-url"
-          aria-label="Portfolio Page"
-          >Portfolio</a
-        >
-        <a
-          href="../Design/DesignPage.html"
-          class="u-url"
-          aria-label="Design Page"
-          >Design</a
-        >
-        <a
-          href="../Essays/EssaysPage.html"
-          class="u-url"
-          aria-label="Essays Page"
-          >Essays</a
-        >
-      </nav>
-      <h1 class="p-pagename" data-heading="WebpageName">Blogs</h1>
-    </header>
-    <main>
-      <nav class="h-blogs" data-navigation="BlogMenu">
+    <header class="page header">
+      <nav class="menu" aria-label="Main Navigation">
+        <img
+          src="../Images/Logo.png"
+          alt="Logo"
+          class="Logo"
+          data-photo="Selfie of me"
+        />
         <ul>
-          <li><a href="Blog1.html">Week 1</a></li>
-          <li><a href="Blog2.html">Week 2</a></li>
-          <li><a href="Blog3.html">Week 3</a></li>
-          <li><a href="Blog4.html">Week 4</a></li>
+          <li>
+            <a href="../index.html" class="u-url" aria-label="Home Page"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="MainBlogPage.html" class="u-url" aria-label="Blogs Page"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Portfolio/portfolio.html"
+              class="u-url"
+              aria-label="Portfolio Page"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Design/DesignPage.html"
+              class="u-url"
+              aria-label="Design Page"
+              >Design</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Essays/EssaysPage.html"
+              class="u-url"
+              aria-label="Essays Page"
+              >Essays</a
+            >
+          </li>
+          <li class="ContactButton">
+            <a href="../index.html#Contact">Contact</a>
+          </li>
         </ul>
       </nav>
+    </header>
+
+    <main>
+      <h1 class="p-pagename" data-heading="WebpageName">Blogs</h1>
+
+      <div class="Flexbox">
+        <div class="h-blogs" data-navigation="BlogMenu">
+          <a href="Blog1.html" class="Blog1">
+            <div>
+              <header>
+                <h2>Blog 1: Setting Up ... A New Beginning</h2>
+              </header>
+              <section>
+                <article>
+                  <p class="previews">
+                    As the first week of the new school year comes to a close, I
+                    find myself feeling both anxious and excited. The past
+                    week’s lectures have sparked engaging discussions..."As we
+                    may think" at 65 "As We May Think at 65" is an extension of
+                    Vannevar Bush’s visionary 1945 paper...
+                    <span class="readmore">READ MORE</span>
+                  </p>
+                </article>
+              </section>
+            </div>
+          </a>
+
+          <a href="Blog2.html" class="Blog2">
+            <div>
+              <header>
+                <h2>Blog 2: Intro to the World Wide Web...</h2>
+              </header>
+              <section>
+                <article>
+                  <p class="previews">
+                    You Say You Want a Revolution? Hypertext and the Laws of
+                    Media (1991) - Moulthrop, S. The essay created by Moulthrop
+                    entails the creation of the Xanadu by Ted Nelson as a
+                    linkage and read-only system ...URL Scheme and Folder
+                    structure??...
+                    <span class="readmore">READ MORE</span>
+                  </p>
+                </article>
+              </section>
+            </div>
+          </a>
+
+          <a href="Blog3.html" class="Blog3">
+            <div>
+              <header>
+                <h2>Blog 3: Interaction Design & User Alignment</h2>
+              </header>
+              <section>
+                <article>
+                  <p class="previews">
+                    Semantic Markup... This is a fundamental part of the HTML
+                    language, defined as the marking tags that help convey
+                    meaning to a HTML program/document...interactivity and
+                    interface design?..website progress...
+                    <span class="readmore">READ MORE</span>
+                  </p>
+                </article>
+              </section>
+            </div>
+          </a>
+
+          <a href="Blog4.html" class="Blog4">
+            <div>
+              <header>
+                <h2>Blog 4: IxD Process</h2>
+              </header>
+              <section>
+                <article>
+                  <p class="previews">
+                    Interaction Design, also known as IxD, centers on the
+                    overall design process of how a user interacts with a
+                    digital system by creating a clear way to represent its
+                    information... The five steps of the IxD process...
+                    <span class="readmore">READ MORE</span>
+                  </p>
+                </article>
+              </section>
+            </div>
+          </a>
+
+          <div class="BlogNavBar">
+            <header>
+              <h3 id="BlogHeading2">Blogs</h3>
+            </header>
+            <section>
+              <article>
+                <h4>Description:</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  quam assumenda expedita nihil modi, commodi consequatur
+                  ratione voluptatibus culpa quis recusandae in eius ad deserunt
+                  laborum adipisci nam, voluptas labore!
+                </p>
+              </article>
+            </section>
+            <section>
+              <article>
+                <h4>Purpose:</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corrupti porro reiciendis maiores est quidem illum quam dicta
+                  quia vitae illo! Non reprehenderit et nihil sit unde
+                  doloremque rerum placeat perspiciatis.
+                </p>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <footer>
+      <nav class="Blog-nav-buttons" data-buttons="Next&Previous">
+        <a href="../index.html">
+          <button role="button">← Previous Page</button>
+        </a>
+        <a href="../Portfolio/portfolio.html">
+          <button role="button">Next Page →</button>
+        </a>
+      </nav>
+    </footer>
   </body>
-  <footer>
-    <nav class="Blog-nav-buttons" data-buttons="Next&Previous">
-      <a href="../index.html">
-        <button role="button">← Previous Page</button>
-      </a>
-      <a href="../Portfolio/portfolio.html">
-        <button role="button">Next Page →</button>
-      </a>
-    </nav>
-  </footer>
 </html>

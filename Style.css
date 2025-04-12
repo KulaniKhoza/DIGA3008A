@@ -11,13 +11,15 @@ header {
 body {
   background: url(Images/istockphoto-1253853185-612x612.jpg) no-repeat;
   background-size: cover;
-  image-resolution: 1800px;
+  width: 100%;
 }
 .Logo {
   width: 15vh;
   height: 10vh;
-  margin: 0 0%;
+  margin: 0 0;
+  padding-left: 0.3%;
   border-radius: 20%;
+  padding-top: 0.5%;
 }
 nav {
   width: 100%;
@@ -66,7 +68,8 @@ nav ul li a {
   flex-grow: 15rem;
 }
 nav ul li a:hover {
-  background-color: rgb(87, 98, 241);
+  /*background-color: rgb(87, 98, 241);*/
+  background-color: #007ea7;
   display: block;
   border-radius: 20px;
 }
@@ -80,17 +83,16 @@ h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 #SelfieCotainer {
-  border: solid white;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-bottom: 1%;
 }
 .Self {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: white solid;
 }
 .ContactButton {
   background-color: orange;
@@ -104,6 +106,8 @@ h1 {
 .ContactButton a {
   align-self: center;
   justify-self: center;
+  margin-left: 5%;
+  font-size: 1.4rem;
 }
 
 .ContactButton a:hover {
@@ -119,18 +123,20 @@ h1 {
   padding-bottom: 10px;
   border-radius: 20px;
 }
-h2 {
+h3 {
   text-align: center;
   margin-bottom: 20px;
   margin-left: 0px;
   align-items: center;
   color: orange;
+  font-weight: bold;
+  font-size: 4rem;
 }
 table {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 2%;
   border-collapse: separate;
   border-spacing: 50px 0;
 }
@@ -150,11 +156,12 @@ table tr td {
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding-right: 137px;
+  padding-right: 200px;
   padding-bottom: 10px;
   font-family: sans-serif;
-  font-size: 15px;
+  font-size: 2rem;
   font-weight: 100;
+  color: aqua;
 }
 .p-aboutme {
   font-size: 1rem;
@@ -173,9 +180,8 @@ section article {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 100%;
   height: 20%;
-  border: grey solid 20px;
 }
 .WelcomeP {
   width: 100%;
@@ -184,29 +190,58 @@ section article {
   justify-content: center;
   align-items: center;
 }
+.WelcomeP article {
+  align-self: center;
+  justify-content: center;
+  width: 50%;
+  height: 20%;
+  margin-left: 10%;
+}
 .AboutMe {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: white solid;
+  width: 100%;
+  height: 20%;
   margin-bottom: 10px;
 }
-.find {
-  color: orange;
+.AboutArticle {
+  align-self: center;
+  justify-content: center;
+  width: 43%;
+  height: 20%;
 }
 .Intro {
   color: rgb(255, 255, 255);
   font-family: serif;
   font-weight: bold;
-  font-size: 3.5vh;
+  font-size: 3.7vh;
 }
 .SEA {
   color: aqua;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-#name {
+#Portfoliospan {
   color: aqua;
+  font-weight: bolder;
+  font-size: 3.5rem;
+}
+h2 {
+  color: #003249;
+  font-weight: bolder;
+  font-size: 3.5rem;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
+}
+h4 {
+  color: aqua;
+  font-weight: normal;
+  font-size: 2rem;
+  text-align: left;
+  margin: 0%;
+  padding: 2%;
 }
