@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Description of Website when Googled" />
     <title>Kulanis Website</title>
+    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="Style.css" />
   </head>
   <body>
     <header class="page header">
       <nav class="menu" aria-label="Main Navigation">
+        <img
+          src="Images/Logo.png"
+          alt="Logo"
+          class="Logo"
+          data-photo="Selfie of me"
+        />
         <ul>
-          <img
-            src="Images/Logo.png"
-            alt="Logo"
-            class="Logo"
-            data-photo="Selfie of me"
-          />
-
           <li>
             <a href="index.html" class="u-url" aria-label="Home Page">Home</a>
           </li>
@@ -53,35 +53,38 @@
               >Essays</a
             >
           </li>
-          <li>
-            <button class="ContactButton">
-              <a href="#Contact">Contact</a>
-            </button>
+          <li class="ContactButton">
+            <a href="#Contact">Contact</a>
           </li>
         </ul>
       </nav>
-      <a href="#About" data-link="About" role="Link">About</a>
-      <a href="#Contact" data-link="Contact" role="link">Contact</a>
     </header>
 
     <main>
-      <h1>Welcome to my Portfolio Website</h1>
+      <h1>Dive Into Kulani's - <span class="SEA">SEA </span>- World</h1>
+      <h2 class="Intro">
+        Welcome to my <span id="name">Portfolio</span> Website
+      </h2>
       <section>
-        <article>
-          <p>
-            Diving into my work and expand your knowledge habcksbhkcbs sjefbsjeb
-            fksb ubscbskdbc jasbcsdb subcsdbvsi svcsudnusbd sjdbvsdjbvksd
-            sdkbdvksdbv sndvcskdbvsdkhb sbjdcsdbvbsd jsbcsdbcb sbdcsdbkcb
-          </p>
-        </article>
+        <div class="WelcomeP">
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+              molestiae! Numquam accusantium alias voluptatum ex incidunt, rerum
+              quas autem dignissimos voluptatibus cum exercitationem dolorem
+              expedita mollitia delectus adipisci voluptatem cumque.
+            </p>
+          </article>
+        </div>
       </section>
+
       <h2>Profile:</h2>
-      <figure>
+      <figure id="SelfieCotainer">
         <img
           src="Images/GhibliEffect.png"
           alt="Profile photo of me"
-          width="360"
-          height="355"
+          width="400"
+          height="395"
           class="Self"
           data-photo="Selfie of me"
         />
@@ -112,7 +115,7 @@
         <header>
           <h2 id="About" class="h-About" data-text="About me">About me</h2>
         </header>
-        <section>
+        <section class="AboutMe">
           <article>
             <p class="p-aboutme">
               Hi, I'm Kulani Khoza, a third-year Digital Arts in Engineering
