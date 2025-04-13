@@ -3,49 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog2</title>
+    <title>Blog2</title> 
+    <link rel="stylesheet" href="../Style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="Blogs.css" />
   </head>
   <body>
-    <header>
-      <nav aria-label="Main Navigation">
-        <a href="../index.html" class="u-url" aria-label="Home Page">Home</a>
-        <a href="MainBlogPage.html" class="u-url" aria-label="Blogs Page"
-          >Blogs</a
-        >
-        <a
-          href="../Portfolio/portfolio.html"
-          class="u-url"
-          aria-label="Portfolio Page"
-          >Portfolio</a
-        >
-        <a
-          href="../Design/DesignPage.html"
-          class="u-url"
-          aria-label="Design Page"
-          >Design</a
-        >
-        <a
-          href="../Essays/EssaysPage.html"
-          class="u-url"
-          aria-label="Essays Page"
-          >Essays</a
-        >
-      </nav>
-      <h1 class="p-BlogTitle">Blog 2: Intro to the World Wide Web & Website Development</h1>
-      <time datetime="2025-02-24" class="dt-published"> 24 February 2025, 17:00</time> 
-      <nav class="Blog-nav-buttons" data-buttons="Next&Previous">
-        <a href="Blog1.html">
-          <button role="button">← Previous</button>
-        </a> 
-        <a href="Blog3.html">
-          <button role="button">Next →</button>
-        </a>
+    <header class="page header">
+      <nav class="menu" aria-label="Main Navigation">
+        <img
+          src="../Images/Logo.png"
+          alt="Logo"
+          class="Logo"
+          data-photo="Selfie of me"
+        />
+        <ul>
+          <li>
+            <a href="../index.html" class="u-url" aria-label="Home Page">Home</a>
+          </li>
+          <li>
+            <a href="MainBlogPage.html" class="u-url" aria-label="Blogs Page"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Portfolio/portfolio.html"
+              class="u-url"
+              aria-label="Portfolio Page"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Design/DesignPage.html"
+              class="u-url"
+              aria-label="Design Page"
+              >Design</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Essays/EssaysPage.html"
+              class="u-url"
+              aria-label="Essays Page"
+              >Essays</a
+            >
+          </li>
+          <li class="ContactButton">
+            <a href="../index.html#Contact">Contact</a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <main>
+    <main> 
+      <h1 class="p-BlogTitle">Blog 2: Intro to the World Wide Web & Website Development</h1>
+      <time datetime="2025-02-24" class="dt-published"> <span class = "timeBlog">24 February 2025, 17:00s</span></time> 
+      <div class="nav-buttons">
+        <div class="ButtonBackground">
+          <a id="Previous" href="Blog1.html" aria-label="Previous Page"></a>
+        </div>
+        <div class="ButtonBackground">
+          <a id="Next" href="Blog3.html" aria-label="Next Page"></a>
+        </div>
+      </div>
+      
+    </header>
       <section>
         <article>
-          <h2>URL Scheme and Folder structure</h2>
+          <h3>URL Scheme and Folder structure</h3>
           <p>
             This week, we began a simple introduction in the Html language and
             website development. We touched base on "What is a website" and
@@ -65,7 +91,7 @@
             which different designated information should be placed in their own
             folders underneath the project folder. In this, my folder structure
             was laid out in this specific format.
-            <ul>
+            <ul class="BlogLists">
                 <li>Blogs - in which our weekly
                     blog post would fall under, stored as index html files with names
                     relative to the different blog posts </li> 
@@ -79,25 +105,32 @@
                 <li>index Html - this is described as our
                     home page in which an introduction of who i am will be written</li>
             </ul>
+           <section> 
+            <article>  
+              <p>
             In
             terms of the URL scheme, i didnt do too much of it because lucky for
             us Github handles the URL scheme and also gives the necessary
             license that we require.If we didnt have it, i would need a deeper
             dive in URL scheme as a concept in order to initialize the website
-            as its own identity.
+            as its own identity.  
+            </p>
+          </article> 
+          </section>
           </p>
           <h3>Website Inspirations</h3>
-         <ul>
+         <ul class="BlogLists">
             <li>WIX.com</li>
             <li>Unity</li>
             <li>store.steampowered.com</li> 
             <li>Fifa.com</li>
-         </ul>
-          WIX.com Unity store.steampowered.com Fifa.com
-          <h4>
+         </ul> 
+
+         <p> WIX.com Unity store.steampowered.com Fifa.com </p>
+          <h3>
             You Say You Want a Revolution? Hypertext and the Laws of Media
             (1991)' - Moulthrop, S.
-          </h4>
+          </h3>
           <p>
             The essay created by Moulthrop entails the creation of the Xanadu by
             Ted Nelson as a linkage and read only system. He frames as a digital
@@ -108,14 +141,16 @@
             information of hypertext and growth interactivity in general. He
             further extends on the impact of hypertext in context of "Laws of
             media " by McLuhan, which questions its :  
-            <ul>
+            </p> 
+            <ul class="BlogLists">
                 <li> its ability to enhance</li> 
                 <li> what does it render obsolete</li>
                 <li>What does it revive/retrieve that was
                     previously obsolete</li> 
                  <li>What happens when its taken to its limits</li>
-            </ul>
-             With
+            </ul> 
+
+            <p> With
             context to these questions, Moulthrop essay elaborates that
             Hypertext creates and alludes an interconnected network similar to
             fast food chains in which retrieving and linking information occurs

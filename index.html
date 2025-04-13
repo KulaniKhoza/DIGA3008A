@@ -11,17 +11,10 @@
   <body>
     <header class="page header">
       <nav class="menu" aria-label="Main Navigation">
-        <img
-          src="Images/Logo.png"
-          alt="Logo"
-          class="Logo"
-          data-photo="Selfie of me"
-        />
+        <img src="Images/Logo.png" alt="Logo" class="Logo" data-photo="Logo" />
         <ul>
           <li>
-            <a href="../index.html" class="u-url" aria-label="Home Page"
-              >Home</a
-            >
+            <a href="index.html" class="u-url" aria-label="Home Page">Home</a>
           </li>
           <li>
             <a
@@ -83,6 +76,7 @@
       <h3>Profile:</h3>
       <figure id="SelfieCotainer">
         <img
+          id="FacePhoto"
           src="Images/GhibliEffect.png"
           alt="Profile photo of me"
           width="400"
@@ -148,10 +142,10 @@
     </main>
   </body>
   <footer>
-    <nav class="Home-nav-buttons">
-      <a href="Blogs/MainBlogPage.html">
-        <button data-button="NextPage" role="button">Next Page →</button>
-      </a>
-    </nav>
+    <div class="nav-buttons">
+      <div class="ButtonBackground">
+        <a id="Next" href="Blogs/MainBlogPage.html" aria-label="Next Page"></a>
+      </div>
+    </div>
   </footer>
 </html>

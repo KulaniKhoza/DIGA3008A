@@ -5,49 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Style.css" />
     <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="Blogs.css" />
     <title>Blog 1</title>
   </head>
+  <header class="page header">
+    <nav class="menu" aria-label="Main Navigation">
+      <img
+        src="../Images/Logo.png"
+        alt="Logo"
+        class="Logo"
+        data-photo="Selfie of me"
+      />
+      <ul>
+        <li>
+          <a href="../index.html" class="u-url" aria-label="Home Page">Home</a>
+        </li>
+        <li>
+          <a href="MainBlogPage.html" class="u-url" aria-label="Blogs Page"
+            >Blogs</a
+          >
+        </li>
+        <li>
+          <a
+            href="../Portfolio/portfolio.html"
+            class="u-url"
+            aria-label="Portfolio Page"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a
+            href="../Design/DesignPage.html"
+            class="u-url"
+            aria-label="Design Page"
+            >Design</a
+          >
+        </li>
+        <li>
+          <a
+            href="../Essays/EssaysPage.html"
+            class="u-url"
+            aria-label="Essays Page"
+            >Essays</a
+          >
+        </li>
+        <li class="ContactButton">
+          <a href="../index.html#Contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <body>
-    <header>
-      <nav aria-label="Main Navigation">
-        <a href="../index.html" class="u-url" aria-label="Home Page">Home</a>
-        <a href="MainBlogPage.html" class="u-url" aria-label="Blogs Page"
-          >Blogs</a
-        >
-        <a
-          href="../Portfolio/portfolio.html"
-          class="u-url"
-          aria-label="Portfolio Page"
-          >Portfolio</a
-        >
-        <a
-          href="../Design/DesignPage.html"
-          class="u-url"
-          aria-label="Design Page"
-          >Design</a
-        >
-        <a
-          href="../Essays/EssaysPage.html"
-          class="u-url"
-          aria-label="Essays Page"
-          >Essays</a
-        >
-      </nav>
+    <main>
       <h1 class="p-BlogTitle">Blog 1: Setting Up ... A New Beginning</h1>
 
       <time datetime="2025-02-17" class="dt-published"
-        >17 February 2025, 17:00</time
+        ><span class="timeBlog">17 February 2025, 17:00</span></time
       >
-      <nav class="Blog-nav-buttons" data-buttons="Next&Previous">
-        <a href="Blog2.html">
-          <button role="button">Next →</button>
-        </a>
-      </nav>
-    </header>
-    <main>
+      <div class="nav-buttons">
+        <div class="ButtonBackground">
+          <a id="Next" href="Blog2.html" aria-label="Next Page"></a>
+        </div>
+      </div>
       <section>
         <article>
-          <h2>Jumping into the new year</h2>
+          <h3>Jumping into the new year</h3>
 
           <p>
             As the first week of the new school year comes to a close, I find
@@ -81,19 +103,21 @@
           </p>
           <h3>Git and Github</h3>
 
-          My experience with Git hub was a fairly good one but i wouldn't say it
-          was a smooth one. When setting up my github on Visual studio code, i
-          was made aware that my git hub wasn't not fused with Git and therefore
-          it wouldn't be displayed on my source control on my visual studio
-          code. Once i was made aware of this, i played around with git and
-          github and was able to fix this complication and in turn it created a
-          learning experience for me on the depths of github and how it operates
-          which improved my overall understanding of it. Everything else was
-          pretty straight forward especially since we had a step by step guide
-          provided to us on Ulwazi. Not to mention we had previous experience
-          from our previous game design projects throughout our second year.
-
-          <h4>Reading</h4>
+          <p>
+            My experience with Git hub was a fairly good one but i wouldn't say
+            it was a smooth one. When setting up my github on Visual studio
+            code, i was made aware that my git hub wasn't not fused with Git and
+            therefore it wouldn't be displayed on my source control on my visual
+            studio code. Once i was made aware of this, i played around with git
+            and github and was able to fix this complication and in turn it
+            created a learning experience for me on the depths of github and how
+            it operates which improved my overall understanding of it.
+            Everything else was pretty straight forward especially since we had
+            a step by step guide provided to us on Ulwazi. Not to mention we had
+            previous experience from our previous game design projects
+            throughout our second year.
+          </p>
+          <h3>Reading</h3>
           <p>
             "As we may think"at 65 "As We May Think at 65" is an extension of
             Vannevar Bush’s visionary 1945 paper, As We May Think. It reflects

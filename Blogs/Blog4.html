@@ -3,48 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="Blogs.css" />
     <title>Blog 4</title>
   </head>
   <body>
-    <header>
-      <nav aria-label="Main Navigation">
-        <a href="../index.html" class="u-url" aria-label="Home Page">Home</a>
-        <a href="MainBlogPage.html" class="u-url" aria-label="Blogs Page"
-          >Blogs</a
-        >
-        <a
-          href="../Portfolio/portfolio.html"
-          class="u-url"
-          aria-label="Portfolio Page"
-          >Portfolio</a
-        >
-        <a
-          href="../Design/DesignPage.html"
-          class="u-url"
-          aria-label="Design Page"
-          >Design</a
-        >
-        <a
-          href="../Essays/EssaysPage.html"
-          class="u-url"
-          aria-label="Essays Page"
-          >Essays</a
-        >
-      </nav>
-      <h1 class="p-BlogTitle">Blog 4: IxD Process</h1>
-      <time datetime="2025-03-10" class="dt-published"
-        >10 March 2025, 17:00</time
-      >
-      <nav class="Blog-nav-buttons" data-buttons="Next&Previous">
-        <a href="Blog3.html">
-          <button role="button">← Previous</button>
-        </a>
+    <header class="page header">
+      <nav class="menu" aria-label="Main Navigation">
+        <img
+          src="../Images/Logo.png"
+          alt="Logo"
+          class="Logo"
+          data-photo="Selfie of me"
+        />
+        <ul>
+          <li>
+            <a href="../index.html" class="u-url" aria-label="Home Page"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="MainBlogPage.html" class="u-url" aria-label="Blogs Page"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Portfolio/portfolio.html"
+              class="u-url"
+              aria-label="Portfolio Page"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Design/DesignPage.html"
+              class="u-url"
+              aria-label="Design Page"
+              >Design</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Essays/EssaysPage.html"
+              class="u-url"
+              aria-label="Essays Page"
+              >Essays</a
+            >
+          </li>
+          <li class="ContactButton">
+            <a href="../index.html#Contact">Contact</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
+      <h1 class="p-BlogTitle">Blog 4: IxD Process</h1>
+      <time datetime="2025-03-10" class="dt-published">
+        <span class="timeBlog">10 March 2025, 17:00 </span></time
+      >
+      <div class="nav-buttons">
+        <div class="ButtonBackground">
+          <a id="Previous" href="Blog3.html" aria-label="Previous Page"></a>
+        </div>
+        <div class="ButtonBackground">
+          <a id="Next" href="Blog7.html" aria-label="Next Page"> </a>
+        </div>
+      </div>
       <section>
         <article>
-          <h2>Introduction</h2>
+          <h3>Introduction</h3>
 
           <p>
             Interaction Design also known as IxD refers to or centers on the
@@ -58,7 +87,7 @@
       </section>
       <section>
         <article>
-          <h2>1. Goal Alignment</h2>
+          <h3>1. Goal Alignment</h3>
 
           <p>
             My goal for this project is to create a portfolio website that I can
@@ -71,7 +100,7 @@
         </article>
       </section>
       <section>
-        <h2>2. Information structure</h2>
+        <h3>2. Information structure</h3>
         <figure>
           <img
             src="../Images/InformationStructure.png"
@@ -83,7 +112,7 @@
         </figure>
       </section>
       <section>
-        <h2>3. User Flow</h2>
+        <h3>3. User Flow</h3>
         <figure>
           <img
             src="../Images/userflow.drawio.png"
@@ -105,7 +134,7 @@
         </article>
       </section>
       <section>
-        <h2>4. Interface elements with my updated wireframes</h2>
+        <h3>4. Interface elements with my updated wireframes</h3>
         <figure>
           <img
             src="../Images/HomePage.png"
@@ -159,7 +188,7 @@
         </article>
       </section>
       <section>
-        <h2>5. Design (possible style guides and general inspirations)</h2>
+        <h3>5. Design (possible style guides and general inspirations)</h3>
         <figure>
           <img
             src="../Images/Havard.png"
@@ -196,7 +225,7 @@
       </section>
       <section>
         <article>
-          <h2>Implementation</h2>
+          <h3>Implementation</h3>
           <p>
             With my lack of experience in CSS and javascript, i cant quite begin
             with creating the implementation part but we can build a good
@@ -208,7 +237,7 @@
       </section>
       <section>
         <article>
-          <h2>Website progress</h2>
+          <h3>Website progress</h3>
           <p>
             Ive currently been enjoying learning html, i think ive acquired the
             fundamnetal requirements to create a basic outline of a website. In
