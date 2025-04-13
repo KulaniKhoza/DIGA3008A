@@ -3,54 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="portfolio.css" />
     <title>Portfolio</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="page header">
+      <nav class="menu" aria-label="Main Navigation">
+        <img
+          src="../Images/Logo.png"
+          alt="Logo"
+          class="Logo"
+          data-photo="Selfie of me"
+        />
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../Blogs/MainBlogPage.html">Blogs</a></li>
-          <li><a href="../Portfolio/portfolio.html">Portfolio</a></li>
-          <li><a href="../Design/DesignPage.html">Design</a></li>
-          <li><a href="../Essays/EssaysPage.html">Essays</a></li>
+          <li>
+            <a href="../index.html" class="u-url" aria-label="Home Page"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Blogs/MainBlogPage.html"
+              class="u-url"
+              aria-label="Blogs Page"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <a href="/portfolio.html" class="u-url" aria-label="Portfolio Page"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Design/DesignPage.html"
+              class="u-url"
+              aria-label="Design Page"
+              >Design</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Essays/EssaysPage.html"
+              class="u-url"
+              aria-label="Essays Page"
+              >Essays</a
+            >
+          </li>
+          <li class="ContactButton">
+            <a href="../index.html#Contact">Contact</a>
+          </li>
         </ul>
       </nav>
-      <h1>Portfolio work</h1>
     </header>
     <main>
-      <nav>
-        <ul>
-          <li>
-            <article>
-              <h2>Game Design</h2>
-              <p>
-                Here you will come across games I created using the unity, they
-                serve as greate examples of my capabilites
-              </p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h3>Website Development</h3>
-              <p>
-                Here you find the stages it took create this very website ,
-                along with some examples of some of my CSS and JavaScript code.
-              </p>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h4>Electrical engineering projects</h4>
-              <p>
-                Here you find Arduino projects that ive been working and have
-                previously done, Each projecting focusing on Hardware and
-                sofware development
-              </p>
-            </article>
-          </li>
-        </ul>
-      </nav>
+      <h1>Portfolio work</h1>
+      <div class="container">
+        <div class="Box">
+          <article>
+            <h2>Game Design</h2>
+            <p>
+              Here you will come across games I created using the unity, they
+              serve as greate examples of my capabilites ..<span
+                >STILL PENDING</span
+              >
+            </p>
+          </article>
+          <img src="../Images/GameDesign.png" alt="PhotoOfMyGame" />
+        </div>
+        <div class="Box">
+          <article>
+            <h2>Tutoring Experience</h2>
+            <p>
+              Here you’ll find an overview of my tutoring experience, including
+              the subjects I covered, and examples of custom resources I created
+              to support their learning. <span>STILL PENDING</span>
+            </p>
+          </article>
+          <img src="../Images/Tutor.jpg" alt="tutor image" />
+        </div>
+        <div class="Box">
+          <article>
+            <h2>Electronic projects</h2>
+            <p>
+              Here you find Arduino projects that ive been working and have
+              previously done, Each projecting focusing on Hardware and sofware
+              development ... <span>STILL PENDING</span>
+            </p>
+          </article>
+          <img src="../Images/ElectricalProjects.jpeg" alt="CircuitBoard" />
+        </div>
+      </div>
     </main>
     <footer>
       <div class="nav-buttons">

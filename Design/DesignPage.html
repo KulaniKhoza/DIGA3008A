@@ -3,40 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="Design.css" />
     <title>DesignPage</title>
   </head>
   <body>
-    <header>
-      <nav aria-label="Main Navigation">
-        <a href="../index.html" class="u-url" aria-label="Home Page">Home</a>
-        <a
-          href="../Blogs/MainBlogPage.html"
-          class="u-url"
-          aria-label="Blogs Page"
-          >Blogs</a
-        >
-        <a
-          href="../Portfolio/portfolio.html"
-          class="u-url"
-          aria-label="Portfolio Page"
-          >Portfolio</a
-        >
-        <a
-          href="../Design/DesignPage.html"
-          class="u-url"
-          aria-label="Design Page"
-          >Design</a
-        >
-        <a
-          href="../Essays/EssaysPage.html"
-          class="u-url"
-          aria-label="Essays Page"
-          >Essays</a
-        >
+    <header class="page header">
+      <nav class="menu" aria-label="Main Navigation">
+        <img
+          src="../Images/Logo.png"
+          alt="Logo"
+          class="Logo"
+          data-photo="Selfie of me"
+        />
+        <ul>
+          <li>
+            <a href="../index.html" class="u-url" aria-label="Home Page"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Blogs/MainBlogPage.html"
+              class="u-url"
+              aria-label="Blogs Page"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Portfolio/portfolio.html"
+              class="u-url"
+              aria-label="Portfolio Page"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Design/DesignPage.html"
+              class="u-url"
+              aria-label="Design Page"
+              >Design</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Essays/EssaysPage.html"
+              class="u-url"
+              aria-label="Essays Page"
+              >Essays</a
+            >
+          </li>
+          <li class="ContactButton">
+            <a href="../index.html#Contact">Contact</a>
+          </li>
+        </ul>
       </nav>
-      <h1 data-heading="DesignPageName">Design</h1>
     </header>
+
     <main>
+      <h1 data-heading="DesignPageName">Design</h1>
       <section>
         <article>
           <p class="p-SummaryofDesign">
@@ -53,7 +80,7 @@
         </article>
       </section>
       <section>
-        <h2>HomePage</h2>
+        <h3>HomePage</h3>
         <figure>
           <img
             src="../Images/HomePage.png"
@@ -106,7 +133,7 @@
       </section>
 
       <section>
-        <h2>BlogPage</h2>
+        <h3>BlogPage</h3>
         <figure>
           <img
             src="../Images/BlogPage.png"
@@ -128,7 +155,7 @@
           </p>
         </article>
         <article data-feedback="Notes 2">
-          Feedback:
+          <p>Feedback:</p>
           <ul>
             <li>
               The buttons on blog items are too much in the corner, it almost
@@ -143,7 +170,7 @@
       </section>
 
       <section>
-        <h2>PortfolioPage</h2>
+        <h3>PortfolioPage</h3>
         <figure>
           <img
             src="../Images/PortfolioPage.png"
@@ -164,7 +191,7 @@
         </article>
       </section>
       <section>
-        <h2>DesignPage and EssayPage</h2>
+        <h3>DesignPage and EssayPage</h3>
         <table>
           <tr>
             <td>
@@ -197,7 +224,7 @@
         </table>
       </section>
       <section>
-        <h2>User Flow</h2>
+        <h3>User Flow</h3>
         <figure>
           <img
             src="../Images/userflow.drawio.png"
@@ -211,7 +238,7 @@
         </figure>
       </section>
       <section>
-        <h2>Information structure</h2>
+        <h3>Information structure</h3>
         <figure>
           <img
             src="../Images/InformationStructure.png"
@@ -231,7 +258,7 @@
       <div class="ButtonBackground">
         <a
           id="Previous"
-          href="../Design/DesignPage.html"
+          href="../Portfolio/portfolio.html"
           aria-label="Previous Page"
         ></a>
       </div>

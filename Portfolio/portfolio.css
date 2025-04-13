@@ -1,0 +1,42 @@
+.container {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2%;
+}
+.Box {
+  height: 60vh;
+  background-color: #9ad1d4;
+  margin: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.Box article {
+  margin: 2%;
+}
+.Box:hover {
+  background-color: #007ea7;
+
+  border-radius: 20px;
+}
+article p {
+  font-size: 2.2vh;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.Box img {
+  width: 50vh;
+  height: 30vh;
+  justify-content: center;
+  align-self: center;
+  border-radius: 20px;
+}
+span {
+  color: rgb(0, 2, 62);
+  font-weight: bold;
+}
