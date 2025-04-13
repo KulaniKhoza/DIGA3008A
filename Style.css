@@ -78,7 +78,7 @@ h1 {
   text-align: center;
   color: rgb(251, 255, 255);
   font-weight: bold;
-  font-size: 10vh;
+  font-size: 15vh;
   padding-bottom: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -233,6 +233,14 @@ section article {
   font-weight: bolder;
   font-size: 3.5rem;
 }
+.normalheading {
+  text-align: center;
+  color: rgb(251, 255, 255);
+  font-weight: bold;
+  font-size: 10vh;
+  padding-bottom: 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 h2 {
   color: #003249;
   font-weight: bolder;
@@ -248,6 +256,12 @@ h4 {
   text-align: left;
   margin: 0%;
   padding: 2%;
+}
+h5 {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 2%;
 }
 figure {
   margin: 2rem;
@@ -310,4 +324,11 @@ figure img {
 
 #Next {
   transform: rotate(135deg); /* Right-pointing arrow */
+}
+.Caption {
+  color: white;
+  font-family: sans-serif;
+  font-size: 3vh;
+  font-weight: 10px;
+  margin: 1%;
 }
