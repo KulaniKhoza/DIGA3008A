@@ -16,7 +16,9 @@
     "NavBar Blog1"
     "NavBar Blog2"
     "NavBar Blog3"
-    ". Blog4";
+    ". Blog4"
+    ". Blog7";
+
   justify-content: center;
   align-content: start; /* allows growth downwards */
   width: 100%;
@@ -49,6 +51,13 @@
 .Blog4 {
   background-color: #9ad1d4;
   grid-area: Blog4;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.Blog7 {
+  background-color: #9ad1d4;
+  grid-area: Blog7;
   padding: 10px;
   border-radius: 20px;
   text-decoration: none;
