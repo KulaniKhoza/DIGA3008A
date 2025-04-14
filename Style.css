@@ -91,7 +91,6 @@ h1 {
 .ContactButton {
   background-color: orange;
   display: flexbox;
-  border: grey solid;
   flex-direction: row;
   justify-content: center;
   align-items: center;

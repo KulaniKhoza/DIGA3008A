@@ -42,3 +42,39 @@ span {
   color: rgb(0, 2, 62);
   font-weight: bold;
 }
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Box {
+    width: 90%;
+    height: auto;
+  }
+
+  .Box img {
+    width: 90%;
+    height: auto;
+  }
+
+  article p {
+    font-size: 2.5vh;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .Box {
+    width: 30%;
+  }
+
+  .Box img {
+    width: 100%;
+    height: auto;
+  }
+
+  article p {
+    font-size: 3.5vh;
+  }
+}
