@@ -30,35 +30,35 @@
 .Blog1 {
   background-color: #9ad1d4;
   grid-area: Blog1;
-  padding: 10px;
+  padding: 1vh;
   border-radius: 20px;
   text-decoration: none;
 }
 .Blog2 {
   background-color: #9ad1d4;
   grid-area: Blog2;
-  padding: 10px;
+  padding: 1vh;
   border-radius: 20px;
   text-decoration: none;
 }
 .Blog3 {
   background-color: #9ad1d4;
   grid-area: Blog3;
-  padding: 10px;
+  padding: 1vh;
   border-radius: 20px;
   text-decoration: none;
 }
 .Blog4 {
   background-color: #9ad1d4;
   grid-area: Blog4;
-  padding: 10px;
+  padding: 1vhx;
   border-radius: 20px;
   text-decoration: none;
 }
 .Blog7 {
   background-color: #9ad1d4;
   grid-area: Blog7;
-  padding: 10px;
+  padding: 1vh;
   border-radius: 20px;
   text-decoration: none;
 }
@@ -80,7 +80,7 @@
   color: black;
 }
 .h-blogs a div header h2 {
-  margin: 0 0 5px 0; /* Top, right, bottom, left */
+  margin: 0 0 1vh 0; /* Top, right, bottom, left */
   padding-bottom: 1%;
   text-align: left;
 }
