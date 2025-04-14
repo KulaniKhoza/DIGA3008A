@@ -56,7 +56,7 @@ nav ul li a {
   margin-right: 1.7vh;
 }
 nav ul li a:hover,
-a.active {
+nav a.active {
   /*background-color: rgb(87, 98, 241);*/
   background-color: #007ea7;
   display: block;
@@ -322,115 +322,47 @@ figure img {
   font-weight: 10px;
   margin: 1%;
 }
-/*FOR TABLET*/
-@media (max-width: 960px) {
-  nav {
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
+.burgerbutton {
+  font-size: 30px;
+  color: white;
+  float: right;
+  margin-left: 1vh;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+#CheckBox {
+  display: none;
+}
+@media (max-width: 940px) {
+  .burgerbutton {
+    display: block;
   }
-
   nav ul {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-    padding: 0;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  nav ul li a {
-    font-size: 1.8rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .Logo {
-    width: 10vh;
-    height: 7vh;
-    margin-bottom: 10px;
-  }
-
-  h1,
-  .normalheading {
-    font-size: 8vh;
-  }
-
-  h3 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 2.2rem;
-  }
-
-  .Intro {
-    font-size: 4vh;
-    text-align: center;
-    padding: 10px;
-  }
-
-  #Portfoliospan {
-    font-size: 2.2rem;
-  }
-
-  .WelcomeP article,
-  .AboutArticle {
-    width: 80%;
-    height: auto;
-    margin: 20px auto;
-  }
-
-  #FacePhoto {
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-  }
-
-  .Self {
-    margin: 0 auto;
-  }
-
-  table {
-    flex-direction: column;
-    align-items: center;
+    position: fixed;
     width: 100%;
-    font-size: 2vh;
-    border-spacing: 20px 0;
-  }
-
-  .find {
-    padding-right: 0;
-    font-size: 1.5rem;
-  }
-
-  .nav-buttons {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .ButtonBackground {
-    width: 70px;
-    height: 70px;
-  }
-
-  .Caption,
-  figcaption,
-  .p-aboutme {
-    font-size: 2.5vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    height: 100vh;
     text-align: center;
-    padding: 0 10px;
+    left: -100%;
+    top: 10vh;
+    transition: all 1s;
   }
-
-  figure {
-    margin: 1rem;
+  nav ul li {
+    display: block;
+    padding: 2vh;
   }
-
-  section article {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 10px;
+  nav ul li a {
+    display: block;
+  }
+  nav ul li a:hover,
+  nav a.active {
+    /*background-color: rgb(87, 98, 241);*/
+    background-color: #007ea7;
+    display: block;
+    border-radius: 1.4vh;
+  }
+  #CheckBox:checked ~ ul {
+    left: 0%;
   }
 }
