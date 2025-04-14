@@ -73,8 +73,12 @@ nav ul li a:hover {
   display: block;
   border-radius: 20px;
 }
-nav ul li a:active {
-  color: aqua;
+a.active {
+  background-color: #007ea7;
+  display: block;
+  border-radius: 20px;
+  color: white;
+  border: white solid 20px;
 }
 h1 {
   text-align: center;
