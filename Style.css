@@ -69,7 +69,9 @@ h1 {
   font-weight: bold;
   font-size: 13vh;
   padding-bottom: 10px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: italic;
 }
 #SelfieCotainer {
   display: flex;
@@ -118,8 +120,10 @@ h3 {
   margin-left: 0px;
   align-items: center;
   color: orange;
-  font-weight: bold;
   font-size: 4rem;
+  font-family: "Unna", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 table {
   display: flex;
@@ -140,6 +144,18 @@ table tr td {
   justify-content: space-between;
   align-items: center;
   margin: 0 50px;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3.5vh;
+}
+.u-email {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4vh;
 }
 .find {
   text-align: center;
@@ -148,15 +164,22 @@ table tr td {
   padding-right: 200px;
   padding-bottom: 10px;
   font-family: sans-serif;
-  font-size: 2rem;
-  font-weight: 100;
+  font-size: 2.5rem;
+
   color: aqua;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 .p-aboutme {
-  font-size: 1rem;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 3vh;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4vh;
 }
 section article p {
   color: white;
@@ -182,9 +205,16 @@ section article {
 .WelcomeP article {
   align-self: center;
   justify-content: center;
-  width: 50%;
-  height: 20%;
+  width: 60%;
+  height: 40%;
   margin-left: 10%;
+}
+.WelcomeP article p {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4.5vh;
 }
 #FacePhoto {
   width: 32%;
@@ -203,24 +233,30 @@ section article {
 .AboutArticle {
   align-self: center;
   justify-content: center;
-  width: 43%;
+  width: 48%;
   height: 20%;
 }
+
 .Intro {
   color: #9ad1d4;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  font-size: 6vh;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 10vh;
+  font-family: "Unna", serif;
+  text-align: center;
+  margin-left: 5%;
 }
 .SEA {
   color: aqua;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
+  font-style: normal;
 }
 #Portfoliospan {
   color: aqua;
   font-weight: bolder;
-  font-size: 3.5rem;
+  font-size: 6rem;
 }
 .normalheading {
   text-align: center;
