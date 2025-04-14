@@ -73,7 +73,9 @@ nav ul li a:hover {
   display: block;
   border-radius: 20px;
 }
-
+nav ul li a:active {
+  color: aqua;
+}
 h1 {
   text-align: center;
   color: rgb(251, 255, 255);
