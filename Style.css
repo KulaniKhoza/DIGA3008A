@@ -70,7 +70,7 @@ h1 {
   text-align: center;
   color: rgb(251, 255, 255);
   font-weight: bold;
-  font-size: 13vh;
+  font-size: 6.6vw;
   padding-bottom: 10px;
   font-family: "Kanit", sans-serif;
   font-weight: 800;
@@ -181,7 +181,7 @@ table tr td {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 4vh;
+  font-size: 2vw;
 }
 section article p {
   color: white;
@@ -189,7 +189,7 @@ section article p {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 2.3rem;
+  font-size: 2.3vw;
   margin: 1%;
 }
 section article {
@@ -218,7 +218,7 @@ section article {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 4.5vh;
+  font-size: 2vw;
 }
 #FacePhoto {
   width: 32%;
@@ -237,7 +237,7 @@ section article {
 .AboutArticle {
   align-self: center;
   justify-content: center;
-  width: 48%;
+  width: 52%;
   height: 20%;
 }
 
@@ -245,7 +245,7 @@ section article {
   color: #9ad1d4;
   font-weight: 700;
   font-style: italic;
-  font-size: 10vh;
+  font-size: 5vw;
   font-family: "Unna", serif;
   text-align: center;
   margin-left: 5%;
@@ -281,7 +281,7 @@ h2 {
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
-  font-size: 3.5rem;
+  font-size: 3.3vw;
   text-align: center;
   margin: 0;
   padding-bottom: 10px;
@@ -378,9 +378,12 @@ figure img {
   color: white;
   float: right;
   margin-left: 1vh;
+  padding-right: 0.5vh;
+  margin-right: 1vh;
   line-height: 80px;
   cursor: pointer;
   display: none;
+  align-self: center;
 }
 #CheckBox {
   display: none;

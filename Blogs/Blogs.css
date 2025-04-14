@@ -143,3 +143,76 @@ time {
   font-style: normal;
   margin: 1%;
 }
+@media (max-width: 960px) {
+  .h-blogs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "NavBar"
+      "Blog1"
+      "Blog2"
+      "Blog3"
+      "Blog4"
+      "Blog7";
+
+    justify-content: center;
+    align-content: start;
+    width: 100%;
+    margin: 0 2%;
+    gap: 3% 0;
+    overflow: auto;
+  }
+  .BlogNavBar {
+    grid-area: NavBar;
+  }
+  .Blog1 {
+    grid-area: Blog1;
+  }
+  .Blog2 {
+    grid-area: Blog2;
+  }
+  .Blog3 {
+    grid-area: Blog3;
+  }
+  .Blog4 {
+    grid-area: Blog4;
+  }
+  .Blog7 {
+    grid-area: Blog7;
+  }
+
+  .Blog1,
+  .Blog2,
+  .Blog3,
+  .Blog4,
+  .Blog7 {
+    width: 100%;
+    margin-bottom: 0.3rem;
+    background-color: #9ad1d4;
+    border-radius: 20px;
+  }
+  .BlogNavBar {
+    width: 100%;
+    margin-bottom: 0.3rem;
+    border-radius: 20px;
+  }
+  .previews {
+    font-size: 2.4vh;
+    text-align: justify;
+  }
+
+  .BlogLists li {
+    font-size: 2.5vh;
+  }
+
+  #BlogHeading2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .Flexbox {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,12 +1,13 @@
 ul li {
   color: white;
-  font-size: 3.4vh;
+  font-size: 2.3vw;
   font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   margin: 3%;
 }
+
 .container {
   width: 100%;
   display: flex;
