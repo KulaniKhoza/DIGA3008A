@@ -48,3 +48,14 @@ ul li {
   background-color: #007ea7;
   box-shadow: 0 0 10% 8% #007ea7;
 }
+.h3Version {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  align-items: center;
+  color: orange;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-top: 10px;
+  padding-top: 20px;
+}
