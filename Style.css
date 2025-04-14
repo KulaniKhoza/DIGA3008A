@@ -281,6 +281,7 @@ figcaption {
 figure img {
   width: auto;
   height: auto;
+  border-radius: 10px;
 }
 /*Learn To UI, (2021). Simple & Fast arrow buttons | HTML & CSS only [YouTube video]. Available at: https://www.youtube.com/watch?v=PX9nJaVOtlc [Accessed 13 Apr. 2025].*/
 
