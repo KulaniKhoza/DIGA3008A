@@ -15,11 +15,13 @@ body {
 }
 .Logo {
   width: 15vh;
-  height: 10vh;
+  height: 9.7vh;
   margin: 0 0;
-  padding-left: 0.3%;
+  padding-left: 0.5%;
   border-radius: 20%;
-  padding-top: 0.5%;
+
+  justify-self: flex-start;
+  align-items: flex-start;
 }
 nav {
   width: 100%;
@@ -27,25 +29,22 @@ nav {
   padding-left: 0%;
   padding-right: 0%;
   height: 10vh;
-}
-nav ul {
-  list-style: none;
-  margin: 0 30px;
-  float: right;
-  border: orange solid 10px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-content: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: auto auto; /*To remain in the middle all the time*/
 }
 nav ul li {
   list-style: none;
 
   display: inline-block;
-  margin: 2px 0.5rem;
-  border: white solid;
-  justify-self: center;
+  margin: 2px 0.3rem;
+
   align-self: center;
-  border: white solid;
 }
 nav ul li a {
   color: rgb(255, 255, 255);
@@ -53,23 +52,18 @@ nav ul li a {
   display: inline-block;
   padding: 1rem;
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 4vh;
   font-family: sans-serif;
-  margin-right: 20px;
+  margin-right: 1rem;
 }
-nav ul li a:hover {
+nav ul li a:hover,
+a.active {
   /*background-color: rgb(87, 98, 241);*/
   background-color: #007ea7;
   display: block;
   border-radius: 20px;
 }
-nav ul li a.active {
-  background-color: #007ea7;
-  display: block;
-  border-radius: 20px;
-  color: white;
-  border: white solid 20px;
-}
+
 h1 {
   text-align: center;
   color: rgb(251, 255, 255);
@@ -97,13 +91,13 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-radius: 15rem;
+  border-radius: 4vh;
 }
 .ContactButton a {
   align-self: center;
   justify-self: center;
   margin-left: 5%;
-  font-size: 1.4rem;
+  font-size: 2.9vh;
 }
 
 .ContactButton a:hover {
