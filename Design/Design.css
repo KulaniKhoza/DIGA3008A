@@ -20,7 +20,8 @@ ul li {
   text-decoration: none;
   color: inherit;
   display: block;
-  width: 65%;
+  width: 80%;
+
   display: flex;
   justify-content: center;
 }
