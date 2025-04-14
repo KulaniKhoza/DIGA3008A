@@ -25,9 +25,11 @@
   border-radius: 20px;
 }
 article p {
-  font-size: 2.2vh;
-  font-weight: bold;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2rem;
 }
 .Box img {
   width: 50vh;

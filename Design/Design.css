@@ -1,8 +1,10 @@
 ul li {
   color: white;
-  font-family: sans-serif;
-  font-size: 3vh;
-  font-weight: 10px;
+  font-size: 3.4vh;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
   margin: 3%;
 }
 .container {
@@ -54,8 +56,11 @@ ul li {
   margin-left: 0px;
   align-items: center;
   color: orange;
-  font-weight: bold;
-  font-size: 3rem;
+  font-size: 3.8rem;
+  font-family: "Unna", serif;
+  font-weight: 700;
+  font-style: normal;
+
   margin-top: 10px;
   padding-top: 20px;
 }
