@@ -406,7 +406,6 @@ figure img {
 /*transition to the normal nav for smooth sticky effect */
 nav {
   transition: all 0.3s ease;
-  position: relative;
 }
 /* Add a transition to the normal nav for smooth sticky effect */
 nav {
