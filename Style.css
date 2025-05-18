@@ -59,13 +59,11 @@ nav ul li a {
   margin-right: 1.7vh;
 }
 nav ul li a:hover,
-nav a.active {
-  /*background-color: rgb(87, 98, 241);*/
+nav ul li a.active {
   background-color: #007ea7;
   display: block;
   border-radius: 1.4vh;
 }
-
 h1 {
   text-align: center;
   color: rgb(251, 255, 255);
@@ -388,6 +386,34 @@ figure img {
 #CheckBox {
   display: none;
 }
+/* Sticky Navbar Styles */
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  background: rgba(
+    11,
+    1,
+    51,
+    0.9
+  ); /* Slightly more opaque than your original */
+  transition: all 0.3s ease;
+}
+
+/*transition to the normal nav for smooth sticky effect */
+nav {
+  transition: all 0.3s ease;
+  position: relative;
+}
+/* Add a transition to the normal nav for smooth sticky effect */
+nav {
+  transition: all 0.3s ease;
+  position: relative; /* Needed for absolute positioning of animation */
+}
+
 @media (max-width: 940px) {
   .burgerbutton {
     display: block;
@@ -409,8 +435,7 @@ figure img {
   nav ul li a {
     display: block;
   }
-  nav ul li a:hover,
-  nav a.active {
+  nav ul li a:hover {
     /*background-color: rgb(87, 98, 241);*/
     background-color: #007ea7;
     display: block;
@@ -418,5 +443,8 @@ figure img {
   }
   #CheckBox:checked ~ ul {
     left: 0%;
+  }
+  .sticky-nav ul {
+    top: 10vh; /* Match your existing mobile menu position */
   }
 }
