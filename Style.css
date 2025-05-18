@@ -130,7 +130,7 @@ h1 {
 }
 
 .ContactButton:hover {
-  background-color: #ff8c00; /* Slightly darker orange on hover */
+  background-color: #ff8c00; /*darker orange */
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -214,14 +214,14 @@ table tr td {
   font-style: normal;
   font-size: 2vw;
 }
-section article p {
+section article p:not(.previews) {
   color: white;
   font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   font-size: 2vw;
-  margin: 1%;
+  margin: 5%;
 }
 section article {
   flex-direction: row;
@@ -365,8 +365,8 @@ figure img {
 }
 
 .ButtonBackground {
-  height: 100px;
-  width: 100px;
+  height: 8vh;
+  width: 8vh;
   border-radius: 50%;
   background-color: #007ea7;
   display: flex;

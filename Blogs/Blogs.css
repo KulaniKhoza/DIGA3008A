@@ -1,74 +1,115 @@
+/* Allow grid to grow with overflow */
 .Flexbox {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  min-height: 80vh;
-  overflow: auto;
+  /* Remove min-height constraint */
+  min-height: unset;
+  /* Allow content to flow naturally */
+  overflow: visible;
 }
 
 .h-blogs {
   display: grid;
+  /* Keep the 2-column grid */
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: repeat(4, auto);
+  grid-auto-rows: auto;
+  /* Redefine grid areas to position Blog4 under Blog3 */
   grid-template-areas:
     "NavBar Blog1"
     "NavBar Blog2"
     "NavBar Blog3"
-    ". Blog4"
-    ". Blog7";
+    "NavBar Blog4"
+    "NavBar Blog7";
 
   justify-content: center;
-  align-content: start; /* allows growth downwards */
+  align-content: start;
   width: 100%;
   margin: 0 2%;
-  gap: 3% 20vh;
+  gap: 2% 20vh;
   overflow: auto;
+  height: auto;
 }
 
-.Blog1 {
-  background-color: #9ad1d4;
-  grid-area: Blog1;
-  padding: 1vh;
-  border-radius: 20px;
-  text-decoration: none;
-}
-.Blog2 {
-  background-color: #9ad1d4;
-  grid-area: Blog2;
-  padding: 1vh;
-  border-radius: 20px;
-  text-decoration: none;
-}
-.Blog3 {
-  background-color: #9ad1d4;
-  grid-area: Blog3;
-  padding: 1vh;
-  border-radius: 20px;
-  text-decoration: none;
-}
-.Blog4 {
-  background-color: #9ad1d4;
-  grid-area: Blog4;
-  padding: 1vh;
-  border-radius: 20px;
-  text-decoration: none;
-}
+.Blog1,
+.Blog2,
+.Blog3,
+.Blog4,
 .Blog7 {
   background-color: #9ad1d4;
-  grid-area: Blog7;
   padding: 1vh;
   border-radius: 20px;
   text-decoration: none;
+  height: auto;
+  align-self: start;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
 }
+
+/* Adjust navbar for the layout */
 .BlogNavBar {
   grid-area: NavBar;
   padding: 20px;
-  margin-left: 0px;
+  margin: 0;
   border-radius: 20px;
   text-decoration: none;
   border: solid 10px aqua;
+  height: auto;
+  align-self: start;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Control inner content without restricting growth */
+.h-blogs a div {
+  margin: 0;
+  padding: 0;
+  /* Allow natural growth */
+  height: auto;
+  display: block;
+}
+
+/* Control section and article elements */
+.Blog1 section,
+.Blog2 section,
+.Blog3 section,
+.Blog4 section,
+.Blog7 section,
+.Blog1 article,
+.Blog2 article,
+.Blog3 article,
+.Blog4 article,
+.Blog7 article {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  /* Allow natural growth */
+  height: auto;
+  display: block;
+}
+
+/* Control preview text */
+.Blog1 section article p,
+.Blog2 section article p,
+.Blog3 section article p,
+.Blog4 section article p,
+.Blog7 section article p,
+.previews {
+  width: 100%;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3.4vh;
+  color: black;
+  /* Minimal spacing to keep text close to margins */
+  margin: 0;
+  padding: 0.5rem 0;
+  line-height: 1.4;
 }
 .previews {
   width: 100%;
