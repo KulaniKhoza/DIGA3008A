@@ -1,3 +1,4 @@
+/* Main container styling */
 .container {
   min-height: 80vh;
   display: flex;
@@ -5,12 +6,27 @@
   justify-content: space-evenly;
   align-items: flex-start;
   margin: 2%;
-  flex-wrap: wrap; /* In case items overflow horizontally */
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
+/* Box link styling - the clickable wrapper */
+.box-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 30%;
+  min-width: 250px;
+  margin: 0;
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Box styling - the visual container */
 .Box {
   background-color: #9ad1d4;
-  margin: 10px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -18,79 +34,204 @@
   align-items: center;
   padding: 2%;
   box-sizing: border-box;
-  width: 30vw;
-  min-width: 250px;
-  max-width: 30vw;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
 }
 
+/* Article styling within boxes */
 .Box article {
   width: 100%;
+  padding: 10px;
 }
 
-.Box:hover {
-  background-color: #007ea7;
-  border-radius: 20px;
+/* Heading styling */
+.Box h2 {
+  font-size: 2.5rem;
+  color: #003249;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  transition: color 0.3s ease;
 }
 
-article p {
+/* Paragraph styling */
+.Box article p {
   font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: italic;
-  font-size: 3.2vh;
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 15px;
 }
 
+/* Image styling */
 .Box img {
   width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 15px;
   object-fit: cover;
-}
-.Box h2 {
-  font-size: 4vw;
+  transition: transform 0.5s ease;
 }
 
+/* Span styling for "STILL PENDING" text */
 span {
   color: rgb(0, 2, 62);
   font-weight: bold;
 }
-@media only screen and (max-width: 999px) {
-  .container {
-    flex-direction: column;
-    height: auto;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    border: white solid;
+
+/* Hover effects for the box */
+.box-link:hover .Box {
+  background-color: #007ea7;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effects for text */
+.box-link:hover .Box h2 {
+  color: white;
+}
+
+.box-link:hover .Box p {
+  color: #f0f0f0;
+}
+
+/* Hover effects for images */
+.box-link:hover .Box img {
+  transform: scale(1.03);
+}
+
+/* Active state (when clicked) */
+.box-link:active .Box {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Overlay effect on hover */
+.Box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.box-link:hover .Box::before {
+  opacity: 1;
+}
+
+/* Ensure content appears above overlay */
+.Box article,
+.Box img {
+  position: relative;
+  z-index: 2;
+}
+
+/* Medium screens */
+@media only screen and (max-width: 1200px) {
+  .box-link {
+    width: 45%;
   }
 
-  .Box {
-    width: 30vh;
-    height: auto;
+  .Box h2 {
+    font-size: 2rem;
   }
 
-  .Box img {
-    width: 90%;
-    height: auto;
-  }
-
-  article p {
-    font-size: 2.5vh;
-    text-align: center;
+  .Box article p {
+    font-size: 1.1rem;
   }
 }
 
-@media only screen and (min-width: 1200px) {
+/* Small screens */
+@media only screen and (max-width: 999px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-link {
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+
   .Box {
-    width: 30%;
-  }
-
-  .Box img {
     width: 100%;
-    height: auto;
   }
 
-  article p {
-    font-size: 3.5vh;
+  .Box h2 {
+    font-size: 1.8rem;
   }
+
+  .Box article p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* Disable hover effects on touch devices */
+  .box-link:hover .Box {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .box-link:hover .Box img {
+    transform: none;
+  }
+}
+
+/* Extra small screens */
+@media only screen and (max-width: 480px) {
+  .box-link {
+    width: 95%;
+  }
+
+  .Box h2 {
+    font-size: 1.5rem;
+  }
+
+  .Box article p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation for page load */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.box-link {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.box-link:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.box-link:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.box-link:nth-child(3) {
+  animation-delay: 0.5s;
 }
