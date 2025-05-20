@@ -32,14 +32,13 @@
     />
     <script src="Scripts/StickyNav.js"></script>
     <script src="Scripts/ActivePage.js"></script>
+    <script src="Scripts/Script.js"></script>
   </head>
   <body>
     <header class="page header">
       <nav class="menu" aria-label="Main Navigation">
-        <input type="checkbox" name="Check" id="CheckBox" />
-        <label for="CheckBox" class="burgerbutton"
-          ><i class="fas fa-bars" id="menu-icon"></i
-        ></label>
+        <i class="fas fa-bars" id="burgerbutton" id="menu-icon"></i>
+
         <img src="Images/Logo.png" alt="Logo" class="Logo" data-photo="Logo" />
 
         <ul>
@@ -79,7 +78,7 @@
             >
           </li>
           <li class="ContactButtonContainer">
-            <button class="ContactButton" onclick="location.href='#Contact'">
+            <button class="ContactButton" onclick="scrollToContact()">
               Contact
             </button>
           </li>

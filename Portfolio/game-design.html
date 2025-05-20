@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Style.css" />
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../Scripts/ActivePage.js"></script>
+    <script src="../Scripts/StickyNav.js"></script>
+    <script src="..Scripts/Script.js"></script>
+    <title>GameDesign Portfolio</title>
+  </head>
+  <body>
+    <header class="page header">
+      <nav class="menu" aria-label="Main Navigation">
+        <input type="checkbox" name="Check" id="CheckBox" />
+        <label for="CheckBox" class="burgerbutton"
+          ><i class="fas fa-bars" id="menu-icon"></i
+        ></label>
+        <img
+          src="../Images/Logo.png"
+          alt="Logo"
+          class="Logo"
+          data-photo="Selfie of me"
+        />
+        <ul>
+          <li>
+            <a href="../index.html" class="u-url" aria-label="Home Page"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Blogs/MainBlogPage.html"
+              class="u-url"
+              aria-label="Blogs Page"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <a href="portfolio.html" class="u-url" aria-label="Portfolio Page"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Design/MainDesignPage.html"
+              class="u-url"
+              aria-label="Design Page"
+              >Design</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Essays/EssaysPage.html"
+              class="u-url"
+              aria-label="Essays Page"
+              >Essays</a
+            >
+          </li>
+          <li class="ContactButtonContainer">
+            <button
+              class="ContactButton"
+              onclick="location.href='../index.html#Contact'"
+            >
+              Contact
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="normalheading">Game Design Portfolio</h1>
+
+      <div class="games-container">
+        <div class="game-card">
+          <div class="game-image">
+            <img
+              src="../Images/Screenshot 2025-05-19 221510.png"
+              alt="2D Platformer Game Screenshot"
+              class="game-screenshot"
+            />
+          </div>
+          <div class="game-content">
+            <h2>2D PLATFORMER GAME</h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              consequatur aspernatur deleniti hic, ratione corporis minima nam
+              blanditiis, cum eaque, quaerat eius illo eos impedit mollitia
+              vitae natus animi alias. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Maxime soluta asperiores maiores cum sunt quas
+              repellendus provident debitis ex atque, ab incidunt aliquam modi
+              laudantium culpa ea, nobis beatae illo? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Eaque cumque consequatur libero
+              blanditiis aperiam facere est, at eligendi ratione repellat
+              quibusdam ipsa natus, explicabo quod sequi iure! Enim, dicta
+              totam!
+            </p>
+            <div class="game-tags">
+              <span class="tag">Unity</span>
+              <span class="tag">C#</span>
+              <span class="tag">2D</span>
+              <span class="tag">Platformer</span>
+            </div>
+            <button
+              class="view-project-btn"
+              onclick="window.location.href='https://kulanikhoza.itch.io/2d-platformer-game'"
+            >
+              View Project
+            </button>
+          </div>
+        </div>
+
+        <div class="game-card">
+          <div class="game-image">
+            <img
+              src="../Images/FarmSimulatorImage.png"
+              alt="Farming Simulator Screenshot"
+              class="game-screenshot"
+            />
+          </div>
+          <div class="game-content">
+            <h2>FARMING SIMULATOR</h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              consequatur aspernatur deleniti hic, ratione corporis minima nam
+              blanditiis, cum eaque, quaerat eius illo eos impedit mollitia
+              vitae natus animi alias. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Maxime soluta asperiores maiores cum sunt quas
+              repellendus provident debitis ex atque, ab incidunt aliquam modi
+              laudantium culpa ea, nobis beatae illo? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Eaque cumque consequatur libero
+              blanditiis aperiam facere est, at eligendi ratione repellat
+              quibusdam ipsa natus, explicabo quod sequi iure! Enim, dicta
+              totam!
+            </p>
+            <div class="game-tags">
+              <span class="tag">Unreal Engine</span>
+              <span class="tag">Blueprint</span>
+              <span class="tag">Simulation</span>
+            </div>
+            <button
+              class="view-project-btn"
+              onclick="window.location.href='https://kulanikhoza.itch.io/farming-simulator-2d'"
+            >
+              View Project
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

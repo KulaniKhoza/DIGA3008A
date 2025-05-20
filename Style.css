@@ -404,7 +404,7 @@ figure img {
   font-weight: 10px;
   margin: 1%;
 }
-.burgerbutton {
+#burgerbutton {
   font-size: 30px;
   color: white;
   float: right;
@@ -416,9 +416,7 @@ figure img {
   display: none;
   align-self: center;
 }
-#CheckBox {
-  display: none;
-}
+
 /* Sticky Navbar Styles */
 .sticky-nav {
   position: fixed;
@@ -447,7 +445,7 @@ nav {
 }
 
 @media (max-width: 940px) {
-  .burgerbutton {
+  #burgerbutton {
     display: block;
   }
   nav ul {
@@ -473,7 +471,7 @@ nav {
     display: block;
     border-radius: 1.4vh;
   }
-  #CheckBox:checked ~ ul {
+  nav ul.menuopen {
     left: 0%;
   }
   .sticky-nav ul {

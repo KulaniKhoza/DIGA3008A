@@ -1,10 +1,18 @@
-console.log("This is my Console Message");
+const bar = document.getElementById("burgerbutton");
+const nav = document.querySelector("nav");
 
-let randmoNum1 = Math.floor(Math.random() * 51);
-let randmoNum2 = Math.floor(Math.random() * 51);
+document.addEventListener("DOMContentLoaded", function () {
+  const burger = document.getElementById("burgerbutton");
+  const navList = document.querySelector("nav ul");
 
-if (randmoNum1 === 50 || randmoNum2 === 50 || randmoNum1 + randmoNum2 === 50) {
-  return true;
-} else {
-  return false;
+  burger.addEventListener("click", () => {
+    navList.classList.toggle("menuopen");
+  });
+});
+// Smooth scroll to contact section
+function scrollToContact() {
+  const contactSection = document.getElementById("Contact");
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: "smooth" });
+  }
 }
