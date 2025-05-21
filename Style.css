@@ -453,11 +453,11 @@ nav {
   }
 
   /* When menu is active, hide hamburger and show X */
-  .menu.menuopen #burgerbutton {
+  nav ul.menuopen #burgerbutton {
     display: none;
   }
 
-  .menu.menuopen #closeButton {
+  nav ul.menuopen #closeButton {
     display: block;
   }
 

@@ -18,12 +18,20 @@ document.addEventListener("DOMContentLoaded", function () {
       burger.style.display = "block";
     });
   }
-  // Close menu and switch back to burger icon
-  closeBtn.addEventListener("click", () => {
+});
+window.addEventListener("resize", () => {
+  const burger = document.getElementById("burgerbutton");
+  const closeBtn = document.getElementById("closeButton");
+  const navList = document.querySelector("nav ul");
+
+  if (window.innerWidth > 940) {
     navList.classList.remove("menuopen");
+    burger.style.display = "none";
     closeBtn.style.display = "none";
+  } else {
     burger.style.display = "block";
-  });
+    closeBtn.style.display = "none";
+  }
 });
 
 // Smooth scroll to contact section
