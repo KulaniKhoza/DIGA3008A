@@ -14,8 +14,8 @@ body {
   width: 100%;
 }
 .Logo {
-  width: 15vh;
-  height: 9.7vh;
+  width: 13vh;
+  height: 9vh;
   margin: 0 0;
   padding-left: 0.5%;
   border-radius: 20%;
@@ -27,7 +27,7 @@ nav {
   background: rgb(11, 1, 51, 0.5);
   padding-left: 0%;
   padding-right: 0%;
-  height: 10vh;
+  height: 8.8vh;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -41,7 +41,7 @@ nav ul li {
   list-style: none;
 
   display: inline-block;
-  margin: 2px 1.2vh;
+  margin: 2px 1.7vh;
 
   align-self: center;
 }
@@ -51,7 +51,7 @@ nav ul li a {
   display: inline-block;
   padding: 1rem;
 
-  font-size: 3.7vh;
+  font-size: 3vh;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
@@ -62,14 +62,14 @@ nav ul li a:hover,
 nav ul li a.active {
   background-color: #007ea7;
   display: block;
-  border-radius: 1.4vh;
+  border-radius: 1.6vh;
 }
 h1 {
   text-align: center;
   color: rgb(251, 255, 255);
   font-weight: bold;
-  font-size: 6.6vw;
-  padding-bottom: 10px;
+  font-size: 5.5vw;
+  margin-bottom: 0%;
   font-family: "Kanit", sans-serif;
   font-weight: 800;
   font-style: italic;
@@ -120,7 +120,7 @@ h1 {
   border: none;
   border-radius: 4vh;
   padding: 0.8rem 1.5rem;
-  font-size: 2.9vh;
+  font-size: 2.5vh;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -230,8 +230,17 @@ section article {
   width: 100%;
   height: 20%;
 }
-.WelcomeP {
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  height: 20%;
+  margin: 0%;
+}
+.WelcomeP {
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -242,7 +251,7 @@ section article {
   justify-content: center;
   width: 70%;
   height: 40%;
-  margin-left: 10%;
+  margin-left: 0%;
 }
 .WelcomeP article p {
   font-family: "Cormorant Garamond", serif;
@@ -271,7 +280,7 @@ section article {
   width: 52%;
   height: 20%;
 }
-
+/*
 .Intro {
   color: #9ad1d4;
   font-weight: 700;
@@ -280,7 +289,7 @@ section article {
   font-family: "Unna", serif;
   text-align: center;
   margin-left: 5%;
-}
+}*/
 .SEA {
   color: aqua;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -288,14 +297,7 @@ section article {
   font-weight: bolder;
   font-style: normal;
 }
-#Portfoliospan {
-  color: aqua;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 5.5rem;
-}
+
 .normalheading {
   text-align: center;
   color: rgb(251, 255, 255);
@@ -404,7 +406,8 @@ figure img {
   font-weight: 10px;
   margin: 1%;
 }
-#burgerbutton {
+#burgerbutton,
+#closeButton {
   font-size: 30px;
   color: white;
   float: right;
@@ -448,10 +451,20 @@ nav {
   #burgerbutton {
     display: block;
   }
+
+  /* When menu is active, hide hamburger and show X */
+  .menu.menuopen #burgerbutton {
+    display: none;
+  }
+
+  .menu.menuopen #closeButton {
+    display: block;
+  }
+
   nav ul {
     position: fixed;
     width: 100%;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgba(202, 174, 14, 0.5);
     height: 100vh;
     text-align: center;
     left: -100%;
