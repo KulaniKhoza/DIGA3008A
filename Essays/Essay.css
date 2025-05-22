@@ -65,13 +65,3 @@
   justify-content: center;
   padding-bottom: 2rem;
 }
-
-.tag {
-  background-color: #f0f0f0;
-  color: #555;
-  padding: 0.3rem 0.8rem;
-  border-radius: 50px;
-  font-size: 1.7rem;
-  font-weight: bold;
-  font-family: sans-serif;
-}
