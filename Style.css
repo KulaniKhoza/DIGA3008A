@@ -424,7 +424,7 @@ figure img {
   position: fixed;
   bottom: 40px;
   right: 30px;
-  z-index: 1000;
+  z-index: 4;
   display: none; /* Hidden by default */
   background-color: #007ea7;
   color: white;
@@ -433,8 +433,6 @@ figure img {
   border-radius: 50px;
   font-size: 18px;
   cursor: pointer;
-  transition: opacity 0.4s, visibility 0.4s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #backToTopBtn.show {
@@ -516,6 +514,7 @@ nav {
   }
   nav ul.menuopen {
     left: 0%;
+    z-index: 5;
   }
   .sticky-nav ul {
     top: 10vh; /* Match your existing mobile menu position */
