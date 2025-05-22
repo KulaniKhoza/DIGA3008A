@@ -130,9 +130,17 @@
 }*/
 
 .h-blogs a:hover {
-  background-color: rgb(0, 126, 167, 0.8);
+  background-color: #007ea7;
   display: block;
   border-radius: 20px;
+}
+.h-blogs a:hover h2 {
+  color: #fff;
+  text-decoration: none;
+}
+.h-blogs a:hover p {
+  color: #fff;
+  text-decoration: none;
 }
 #BlogHeading2 {
   text-align: center;
