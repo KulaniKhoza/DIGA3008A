@@ -3,88 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Style.css" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="Essay.css" />
+    <link rel="stylesheet" href="essay.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unna:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="../Scripts/ActivePage.js"></script>
-    <script src="../Scripts/StickyNav.js"></script>
-    <script src="../Scripts/Script.js"></script>
+    <!-- Scripts -->
+    <script src="../scripts/activePage.js" defer></script>
+    <script src="../scripts/stickyNav.js" defer></script>
+    <script src="../scripts/script.js" defer></script>
+
     <title>Academic Essays</title>
   </head>
+
   <body>
-    <header class="page header">
-      <nav class="menu" aria-label="Main Navigation">
-        <!-- BurgerButton-->
-        <i class="fas fa-bars" id="burgerbutton" id="menu-icon"></i>
-        <!-- CloseButton-->
+    <header class="page-header">
+      <nav class="main-menu" aria-label="Main Navigation">
+        <!-- Burger Button -->
+        <i class="fas fa-bars" id="burgerButton"></i>
+        <!-- Close Button -->
         <i class="fas fa-times" id="closeButton"></i>
+
+        <!-- Logo -->
         <img
-          src="../Images/Logo.png"
+          src="../images/logo.png"
           alt="Logo"
-          class="Logo"
+          class="logo"
           data-photo="Selfie of me"
         />
+
+        <!-- Navigation Links -->
         <ul>
           <li>
-            <a href="../index.html" class="u-url" aria-label="Home Page"
+            <a href="../index.html" class="nav-link" aria-label="Home Page"
               >Home</a
             >
           </li>
           <li>
             <a
-              href="../Blogs/MainBlogPage.html"
-              class="u-url"
+              href="../blogs/mainBlogPage.html"
+              class="nav-link"
               aria-label="Blogs Page"
               >Blogs</a
             >
           </li>
           <li>
             <a
-              href="../Portfolio/portfolio.html"
-              class="u-url"
+              href="../portfolio/portfolio.html"
+              class="nav-link"
               aria-label="Portfolio Page"
               >Portfolio</a
             >
           </li>
           <li>
             <a
-              href="../Design/MainDesignPage.html"
-              class="u-url"
+              href="../design/mainDesignPage.html"
+              class="nav-link"
               aria-label="Design Page"
               >Design</a
             >
           </li>
           <li>
-            <a href="EssaysPage.html" class="u-url" aria-label="Essays Page"
+            <a href="essaysPage.html" class="nav-link" aria-label="Essays Page"
               >Essays</a
             >
           </li>
-          <li class="ContactButtonContainer">
+          <li class="contact-button-container">
             <button
-              class="ContactButton"
+              class="contact-button"
               onclick="location.href='../index.html#Contact'"
             >
               Contact
@@ -95,22 +106,58 @@
     </header>
 
     <main>
-      <h1 class="p-pagename">Essays</h1>
-      <section></section>
+      <h1 class="page-title">Essays</h1>
+
+      <div class="content-container">
+        <div class="content-card">
+          <div class="card-image">
+            <img
+              src="../images/screenshot-2025-05-19-221510.png"
+              alt="2D Platformer Game Screenshot"
+              class="screenshot"
+            />
+          </div>
+
+          <div class="card-content">
+            <h2>Essay 1:UX/UX</h2>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              consequatur aspernatur deleniti hic, ratione corporis minima nam
+              blanditiis, cum eaque, quaerat eius illo eos impedit mollitia
+              vitae natus animi alias. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Maxime soluta asperiores maiores cum sunt quas
+              repellendus provident debitis ex atque, ab incidunt aliquam modi
+              laudantium culpa ea, nobis beatae illo? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Eaque cumque consequatur libero
+              blanditiis aperiam facere est, at eligendi ratione repellat
+              quibusdam ipsa natus, explicabo quod sequi iure! Enim, dicta
+              totam!
+            </p>
+            <button
+              class="DownloadEssay"
+              onclick="window.location.href='https://kulanikhoza.itch.io/2d-platformer-game'"
+            >
+              Download
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
-    <button id="backToTopBtn" aria-label="Back to top">
+
+    <button id="backToTopButton" aria-label="Back to top">
       <i class="fas fa-arrow-up"></i>
     </button>
-  </body>
-  <footer>
-    <div class="nav-buttons">
-      <div class="ButtonBackground">
-        <a
-          id="Previous"
-          href="../Design/DesignPage.html"
-          aria-label="Next Page"
-        ></a>
+
+    <footer>
+      <div class="footer-nav-buttons">
+        <div class="button-background">
+          <a
+            id="previousPage"
+            href="../design/designPage.html"
+            aria-label="Previous Page"
+          ></a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </body>
 </html>

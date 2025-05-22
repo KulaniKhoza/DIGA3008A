@@ -234,6 +234,214 @@ span {
 .view-project-btn:hover {
   background-color: #1570cd;
 }
+.tutoring {
+  background-color: none;
+}
+/*TutoringPage*/
+/* Container layout */
+.Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  overflow: auto;
+}
+
+/* Tutoring page main grid */
+.TutoringContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "tutoring tutoring"
+    "TutContentheading TutContentheading"
+    "Tut1 Tut2"
+    "Tut3 Tut4";
+  justify-content: center;
+  align-content: start;
+  width: 100%;
+  margin: 1rem 3rem;
+  gap: 2% 20vh;
+  overflow: auto;
+}
+
+/* Grid area assignment */
+.tutoring {
+  grid-area: tutoring;
+}
+
+.TutContentheading {
+  grid-area: TutContentheading;
+}
+
+.Tut1 {
+  grid-area: Tut1;
+}
+.Tut2 {
+  grid-area: Tut2;
+}
+.Tut3 {
+  grid-area: Tut3;
+}
+.Tut4 {
+  grid-area: Tut4;
+}
+
+/* Card styling */
+
+.Tut1,
+.Tut2,
+.Tut3,
+.Tut4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  margin-bottom: 0.3rem;
+  background-color: #9ad1d4;
+}
+.TutContentheading {
+  text-align: center;
+  color: rgb(251, 255, 255);
+
+  font-size: 6.5vh;
+  padding-bottom: 10px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.tutoring {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+  width: 100%;
+}
+.tutoringitem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 60%;
+  margin: 0.3rem;
+  background-color: #9ad1d4;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.tutoring section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin: 0px;
+}
+.tutoringitem p {
+  width: 90%;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3.4vh;
+  color: black;
+  justify-self: center;
+  justify-items: center;
+  margin: 1rem;
+}
+
+/* Card content area */
+.Tut1-content,
+.Tut2-content,
+.Tut3-content,
+.Tut4-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* Image container */
+.Tut1-Image,
+.Tut2-Image,
+.Tut3-Image,
+.Tut4-Image {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image scaling effect */
+.tutorial-screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effects */
+.Tut1:hover,
+.Tut2:hover,
+.Tut3:hover,
+.Tut4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.Tut1:hover .tutorial-screenshot,
+.Tut2:hover .tutorial-screenshot,
+.Tut3:hover .tutorial-screenshot,
+.Tut4:hover .tutorial-screenshot {
+  transform: scale(1.03);
+}
+
+/* Overlay effect on hover */
+.Tut1::before,
+.Tut2::before,
+.Tut3::before,
+.Tut4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 70%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+/* Responsive (optional) */
+@media (max-width: 768px) {
+  .TutoringContainer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "tutoring"
+      "TutContentheading"
+      "Tut1"
+      "Tut2"
+      "Tut3"
+      "Tut4";
+  }
+}
+
 /* Medium screens */
 @media only screen and (max-width: 1200px) {
   .box-link {
