@@ -59,7 +59,7 @@ nav ul li a:hover,
 nav ul li a.active {
   background-color: #007ea7;
   display: block;
-  border-radius: 1.6vh;
+  border-radius: 1.4vh;
 }
 h1 {
   text-align: center;
