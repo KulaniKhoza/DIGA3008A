@@ -62,3 +62,12 @@ function scrollToContact() {
     contactSection.scrollIntoView({ behavior: "smooth" });
   }
 }
+/*DownloadEssay1*/
+document.querySelector(".DownloadEssay").addEventListener("click", function () {
+  const link = document.createElement("a");
+  link.href = "../PDFS/Essay 1.pdf";
+  link.download = "Essay 1.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+});
