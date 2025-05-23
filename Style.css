@@ -15,13 +15,14 @@ body {
 }
 .Logo {
   width: 13vh;
-  height: 9vh;
+  height: 8.7vh;
   margin: 0 0;
   padding-left: 0.5%;
   border-radius: 20%;
   justify-self: flex-start;
   align-items: flex-start;
 }
+
 nav {
   width: 100%;
   background: rgb(11, 1, 51, 0.5);
@@ -30,37 +31,50 @@ nav {
   height: 8.8vh;
   display: flex;
   flex-direction: row;
-  align-content: center;
+  align-items: center; /* vertically center nav contents */
 }
 
 nav ul {
   list-style: none;
-  margin: auto auto; /*To remain in the middle all the time*/
+  margin: auto auto;
+  height: 100%;
+  display: flex;
+  align-items: center; /* ensure vertical alignment */
+  padding: 0;
 }
+
 nav ul li {
   list-style: none;
-  display: inline-block;
-  margin: 2px 1.7vh;
-  align-self: center;
+  display: flex;
+  align-items: center;
+  margin: 0 1.7vh;
+  height: 100%;
 }
+
 nav ul li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  display: inline-block;
-  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 1rem;
   font-size: 3vh;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
   margin-right: 1.7vh;
+
+  border-radius: 1.4vh;
+  box-sizing: border-box;
 }
+
 nav ul li a:hover,
 nav ul li a.active {
   background-color: #007ea7;
-  display: block;
-  border-radius: 1.4vh;
 }
+
 h1 {
   text-align: center;
   color: rgb(251, 255, 255);
@@ -555,48 +569,56 @@ nav {
   }
 
   nav ul {
+    /* Changed to flex-start */
+    flex-direction: column;
     position: fixed;
+    justify-content: center;
     width: 100%;
-    background-color: rgb(5, 5, 0);
-    height: 100vh;
+    background-color: rgba(5, 5, 0, 0.95); /* More opaque background */
+    height: 95vh; /* Full height minus navbar */
     text-align: center;
+    line-height: 100%;
     left: -100%;
-    top: 10vh;
-    transition: all 1s;
-    z-index: 5;
+    top: 8.8vh; /* Starts right below navbar */
+    transition: all 0.5s ease;
+    z-index: 5; /* Higher z-index */
+    overflow-y: hidden; /* Allow scrolling if many items */
+    padding-top: 20px; /* Add some space at top */
+    margin: 0;
   }
   nav ul li {
-    display: block;
-    padding: 2vh;
+    display: flex;
+    padding: 1vh;
     z-index: 5;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   nav ul li a {
-    display: block;
+    display: flex;
     z-index: 5;
+    align-items: center;
+    justify-content: center;
+    line-height: 100%;
+    height: 70%;
+    width: 100%;
   }
   nav ul li a:hover {
     background-color: #007ea7;
-    display: block;
+
     border-radius: 1.4vh;
     z-index: 5;
+    justify-items: center;
   }
   nav ul.menuopen {
     left: 0%;
     z-index: 5;
-  }
-  .sticky-nav ul {
-    top: 10vh;
   }
 }
 
 /* ================= MEDIA QUERIES ================= */
 /* Medium devices (tablets, 768px to 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
-  nav ul li a {
-    font-size: 2.5vh;
-    padding: 0.8rem;
-  }
-
   .Logo {
     width: 11vh;
     height: 7vh;
@@ -634,10 +656,6 @@ nav {
 
 /* Small devices (phones, 767px and below) */
 @media (max-width: 767px) {
-  nav {
-    height: 7vh;
-  }
-
   .Logo {
     width: 9vh;
     height: 6vh;
@@ -707,10 +725,6 @@ nav {
 
 /* Extra small devices (phones, 480px and below) */
 @media (max-width: 480px) {
-  nav {
-    height: 6vh;
-  }
-
   .Logo {
     width: 7vh;
     height: 5vh;
