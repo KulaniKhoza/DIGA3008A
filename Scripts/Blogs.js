@@ -1,19 +1,12 @@
-const totalPages = 13; // Number of blog pages
-const currentPage = 3; // Set this dynamically if needed (e.g. using URL)
+document.addEventListener("DOMContentLoaded", function () {
+  const blogPages = [1, 2, 3, 4, 7, 9, 10, 11, 12, 13]; // Custom order
+  const paginationButtons = document.querySelectorAll("#wrapper .numb");
 
-const pagination = document.getElementById("wrapper");
-
-for (let i = 1; i <= totalPages; i++) {
-  const li = document.createElement("li");
-  const a = document.createElement("a");
-
-  a.href = `blog${i}.html`;
-  a.textContent = i;
-
-  if (i === currentPage) {
-    li.classList.add("active");
-  }
-
-  li.appendChild(a);
-  pagination.appendChild(li);
-}
+  paginationButtons.forEach((button, index) => {
+    if (blogPages[index]) {
+      button.addEventListener("click", () => {
+        window.location.href = `Blog${blogPages[index]}.html`;
+      });
+    }
+  });
+});
