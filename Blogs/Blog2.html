@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog2</title> 
+    <title>Blog2</title>
     <link rel="stylesheet" href="../Style.css" />
     <link rel="stylesheet" href="../normalize.css" />
-    <link rel="stylesheet" href="Blogs.css" /> 
+    <link rel="stylesheet" href="Blogs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -25,21 +25,19 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
       rel="stylesheet"
-    /> 
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
-    /> 
-    <script src="../Scripts/ActivePage.js"></script> 
-    <script src="../Scripts/Script.js"></script> 
+    />
+    <script src="../Scripts/ActivePage.js"></script>
+    <script src="../Scripts/Script.js"></script>
     <script src="../Scripts/Blogs.js"></script>
   </head>
   <body>
     <header class="page header">
-      <nav class="menu" aria-label="Main Navigation"> 
-        <!-- BurgerButton-->
-        <i class="fas fa-bars" id="burgerbutton" id="menu-icon"></i>
-        <!-- CloseButton-->
+      <nav class="menu" aria-label="Main Navigation">
+        <i class="fas fa-bars" id="burgerbutton"></i>
         <i class="fas fa-times" id="closeButton"></i>
         <img
           src="../Images/Logo.png"
@@ -49,10 +47,15 @@
         />
         <ul>
           <li>
-            <a href="../index.html" class="u-url" aria-label="Home Page" >Home</a>
+            <a href="../index.html" class="u-url" aria-label="Home Page"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="MainBlogPage.html" class="u-url" aria-label="Blogs Page" class="active"
+            <a
+              href="MainBlogPage.html"
+              class="u-url active"
+              aria-label="Blogs Page"
               >Blogs</a
             >
           </li>
@@ -60,8 +63,7 @@
             <a
               href="../Portfolio/portfolio.html"
               class="u-url"
-              aria-label="Portfolio Page" 
-              
+              aria-label="Portfolio Page"
               >Portfolio</a
             >
           </li>
@@ -69,8 +71,7 @@
             <a
               href="../Design/MainDesignPage.html"
               class="u-url"
-              aria-label="Design Page" 
-           
+              aria-label="Design Page"
               >Design</a
             >
           </li>
@@ -78,8 +79,7 @@
             <a
               href="../Essays/EssaysPage.html"
               class="u-url"
-              aria-label="Essays Page" 
-              
+              aria-label="Essays Page"
               >Essays</a
             >
           </li>
@@ -94,9 +94,15 @@
         </ul>
       </nav>
     </header>
-    <main> 
-      <h1 class="normalheading">Blog 2: Intro to the World Wide Web & Website Development</h1>
-      <time datetime="2025-02-24" class="dt-published"> <span class = "timeBlog">24 February 2025, 17:00</span></time> 
+
+    <main>
+      <h1 class="normalheading">
+        Blog 2: Intro to the World Wide Web & Website Development
+      </h1>
+      <time datetime="2025-02-24" class="dt-published">
+        <span class="timeBlog">24 February 2025, 17:00</span>
+      </time>
+
       <div class="nav-buttons">
         <div class="ButtonBackground">
           <i
@@ -107,114 +113,116 @@
         </div>
         <div class="ButtonBackground">
           <i
-          id="Next"
-          class="fas fa-angle-right"
-          onclick="location.href='Blog3.html'"
-        ></i>
+            id="Next"
+            class="fas fa-angle-right"
+            onclick="location.href='Blog3.html'"
+          ></i>
         </div>
       </div>
-      
-    </header>
+
       <section>
         <article>
           <h3>URL Scheme and Folder structure</h3>
           <p>
-            This week, we began a simple introduction in the Html language and
+            This week, we began a simple introduction in the HTML language and
             website development. We touched base on "What is a website" and
             "What are the components that create what we know as a website". A
             consistent word was repeatedly brought up this week that properly
             dissects the answers to these queries. The word was "Wireframe"
             which was explained as the outline and layout of the "Website" in
             which the difference between a website and web page was illustrated.
-            In this,the purpose of HTML was brought to light as it was explained
-            as the creation of structure of the website and not the styling. it
-            was referred to as the bones( Human body) of the website. This is
-            alluded to how the use of html creates the main foundation of your
-            website and how it initializes the various information from the
-            folders created. This led to conversations about folders and how in
-            industry projects are preferred to be laid out in a neat and orderly
-            fashion. This was to implemented in our own project folders, in
-            which different designated information should be placed in their own
-            folders underneath the project folder. In this, my folder structure
-            was laid out in this specific format.
-            <ul class="BlogLists">
-                <li>Blogs - in which our weekly
-                    blog post would fall under, stored as index html files with names
-                    relative to the different blog posts </li> 
-                    <li> Images - This is where the PNG
-                        files of our images will be saved.  </li> 
-                <li>Scripts - The specific scripts
-                    that specifies our javascript code.</li>  
-                    <li>Styling - this is where my
-                        specific CSS code will be saved for the purpose of making our
-                        website aesthetically pleasing</li>
-                <li>index Html - this is described as our
-                    home page in which an introduction of who i am will be written</li>
-            </ul>
-           <section> 
-            <article>  
-              <p>
-            In
-            terms of the URL scheme, i didnt do too much of it because lucky for
-            us Github handles the URL scheme and also gives the necessary
-            license that we require.If we didnt have it, i would need a deeper
-            dive in URL scheme as a concept in order to initialize the website
-            as its own identity.  
-            </p>
-          </article> 
-          </section>
+            In this, the purpose of HTML was brought to light as it was
+            explained as the creation of structure of the website and not the
+            styling. It was referred to as the bones (Human body) of the
+            website. This alludes to how the use of HTML creates the main
+            foundation of your website and how it initializes the various
+            information from the folders created. This led to conversations
+            about folders and how in industry projects are preferred to be laid
+            out in a neat and orderly fashion. This was to be implemented in our
+            own project folders, in which different designated information
+            should be placed in their own folders underneath the project folder.
+            In this, my folder structure was laid out in this specific format.
           </p>
+
+          <ul class="BlogLists">
+            <li>
+              Blogs – Weekly blog posts, stored as index HTML files with names
+              relative to the blog post
+            </li>
+            <li>Images – Where PNG files of our images will be saved</li>
+            <li>Scripts – JavaScript code files</li>
+            <li>Styling – CSS files for the aesthetic of the website</li>
+            <li>
+              index.html – Our home page with an introduction about who I am
+            </li>
+          </ul>
+
+          <p>
+            In terms of the URL scheme, I didn't do too much because lucky for
+            us, GitHub handles the URL scheme and provides the necessary license
+            we require. If we didn't have it, I would need a deeper dive in URL
+            scheme as a concept to initialize the website as its own identity.
+          </p>
+
           <h3>Website Inspirations</h3>
-         <ul class="BlogLists">
+          <ul class="BlogLists">
             <li>WIX.com</li>
             <li>Unity</li>
-            <li>store.steampowered.com</li> 
+            <li>store.steampowered.com</li>
             <li>Fifa.com</li>
-         </ul> 
+          </ul>
 
-         <p> WIX.com Unity store.steampowered.com Fifa.com </p>
+          <p>
+            The websites listed above are some of the websites that I have
+            visited and used in the past. They are all very different in terms
+            of their purpose and what they aim to achieve. But they all have one
+            thing in common, which is that they all have a very clean and
+            professional look to them. This is something that I would like to
+            achieve with my own website. I want it to be simple and easy to
+            navigate, while still looking good. I also want it to be responsive,
+            so that it looks good on all devices.
+          </p>
+
           <h3>
-            You Say You Want a Revolution? Hypertext and the Laws of Media
+            'You Say You Want a Revolution? Hypertext and the Laws of Media
             (1991)' - Moulthrop, S.
           </h3>
           <p>
             The essay created by Moulthrop entails the creation of the Xanadu by
-            Ted Nelson as a linkage and read only system. He frames as a digital
-            equivalent of a library but on a global and interlinked stage. He
-            continues to reference Bush and his ideals and vision of memex to
-            further elaborate the creation of the web and traces the very steps
-            that led to its invention. He does this elaborate the historical
-            information of hypertext and growth interactivity in general. He
-            further extends on the impact of hypertext in context of "Laws of
-            media " by McLuhan, which questions its :  
-            </p> 
-            <ul class="BlogLists">
-                <li> its ability to enhance</li> 
-                <li> what does it render obsolete</li>
-                <li>What does it revive/retrieve that was
-                    previously obsolete</li> 
-                 <li>What happens when its taken to its limits</li>
-            </ul> 
+            Ted Nelson as a linkage and read-only system. He frames it as a
+            digital equivalent of a library but on a global and interlinked
+            stage. He continues to reference Bush and his ideals and vision of
+            memex to further elaborate the creation of the web and traces the
+            very steps that led to its invention. He does this to elaborate the
+            historical information of hypertext and growth of interactivity in
+            general. He further extends on the impact of hypertext in context of
+            "Laws of Media" by McLuhan, which questions:
+          </p>
 
-            <p> With
-            context to these questions, Moulthrop essay elaborates that
-            Hypertext creates and alludes an interconnected network similar to
-            fast food chains in which retrieving and linking information occurs
-            in an improved way. A way in which readers may connect different
-            ideas to different texts and information and overall be in a larger
-            platform for interactivity. Therefore answering the order of
-            enhancement. He also mentions how the effect of hypertext may create
-            a downfall for print culture which may can also be referred to as
-            "the death of the book" in this way, this alludes a change of the
-            traditional way of interacting with media in creating a new one with
-            passive media mixed with active engagement. He then further extends
-            his points by mentioning that Hypertext brings back older means of
-            information engagement, he emphasizes that the knowledge may be
-            passed on the premise of linked and associative text and commentary
-            provided by user inputs hence connectivity through ideas evolves.He
-            also further extends on the consequences and the need of control on
-            this future venture. But i was very confused on how to further
-            elaborate on his opinion here (Sorry Not Sorry). Although Moulthrop
+          <ul class="BlogLists">
+            <li>Its ability to enhance</li>
+            <li>What does it render obsolete</li>
+            <li>What does it revive/retrieve that was previously obsolete</li>
+            <li>What happens when it is taken to its limits</li>
+          </ul>
+
+          <p>
+            With context to these questions, Moulthrop's essay elaborates that
+            hypertext creates and alludes to an interconnected network similar
+            to fast food chains in which retrieving and linking information
+            occurs in an improved way. A way in which readers may connect
+            different ideas to different texts and information and overall be on
+            a larger platform for interactivity. He also mentions how the effect
+            of hypertext may create a downfall for print culture which may be
+            referred to as "the death of the book". In this way, this alludes to
+            a change in the traditional way of interacting with media, creating
+            a new one with passive media mixed with active engagement. He then
+            further extends his points by mentioning that hypertext brings back
+            older means of information engagement. He emphasizes that the
+            knowledge may be passed on the premise of linked and associative
+            text and commentary provided by user inputs, hence connectivity
+            through ideas evolves. He also further extends on the consequences
+            and the need for control in this future venture. Although Moulthrop
             wrote this during the early development of the web, his concerns are
             still highly relevant. His warning that hypertext might be taken
             over by corporations has become a reality, as seen in the dominance
@@ -226,29 +234,30 @@
         </article>
       </section>
     </main>
+
     <button id="backToTopBtn" aria-label="Back to top">
       <i class="fas fa-arrow-up"></i>
     </button>
-  </body> 
-  <footer> 
-   <div id="wrapper">
-    <ul>
-         <li class="btn"><i class="fas fa-angle-left"></i></li>
-        <li class="numb"><span>1</span></li>
-        <li class="numb active"><span>2</span></li>
-        <li class="numb"><span>3</span></li>
-        <li class="numb"><span>4</span></li>
-        <li class="numb"><span>5</span></li> 
-        <li class="numb"><span>7</span></li>
-        <li class="numb"><span>8</span></li>
-        <li class="numb"><span>9</span></li>
-        <li class="numb"><span>10</span></li>
-        <li class="numb"><span>11</span></li> 
-        <li class="numb"><span>12</span></li>
-        <li class="numb"><span>13</span></li>
-        
-        
-        <li class="btn"><i class="fas fa-angle-right"></i></li> 
-    </ul>
-</div></footer>
+
+    <footer>
+      <div id="wrapper">
+        <ul>
+          <li class="btn"><i class="fas fa-angle-left"></i></li>
+          <li class="numb"><span>1</span></li>
+          <li class="numb active"><span>2</span></li>
+          <li class="numb"><span>3</span></li>
+          <li class="numb"><span>4</span></li>
+          <li class="numb"><span>5</span></li>
+          <li class="numb"><span>7</span></li>
+          <li class="numb"><span>8</span></li>
+          <li class="numb"><span>9</span></li>
+          <li class="numb"><span>10</span></li>
+          <li class="numb"><span>11</span></li>
+          <li class="numb"><span>12</span></li>
+          <li class="numb"><span>13</span></li>
+          <li class="btn"><i class="fas fa-angle-right"></i></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

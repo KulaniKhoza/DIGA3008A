@@ -192,7 +192,9 @@ time {
 }
 
 .BlogLists {
-  margin: 0.8%;
+  margin: 8.5%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .BlogLists li {
   color: white;
@@ -202,6 +204,17 @@ time {
   font-weight: 600;
   font-style: normal;
   margin: 1%;
+}
+/*Blog images */
+.blog-image {
+  max-width: 100%;
+  width: 700px;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 }
 
 /* Pagination */
@@ -314,5 +327,10 @@ time {
   .Flexbox {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .blog-image {
+    width: 95%;
   }
 }
