@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog2</title> 
+    <title>Blog13</title>
     <link rel="stylesheet" href="../Style.css" />
     <link rel="stylesheet" href="../normalize.css" />
-    <link rel="stylesheet" href="Blogs.css" /> 
+    <link rel="stylesheet" href="Blogs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -14,75 +14,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Unna:wght@400;700&display=swap"
       rel="stylesheet"
-    /> 
+    />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap"
       rel="stylesheet"
-    /> 
-    <script src="../Scripts/ActivePage.js"></script> 
-    <script src="../Scripts/Script.js"></script> 
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../Scripts/ActivePage.js"></script>
+    <script src="../Scripts/Script.js"></script>
     <script src="../Scripts/Blogs.js"></script>
   </head>
   <body>
     <header class="page header">
-      <nav class="menu" aria-label="Main Navigation"> 
-        <!-- BurgerButton-->
-        <i class="fas fa-bars" id="burgerbutton" id="menu-icon"></i>
-        <!-- CloseButton-->
+      <nav class="menu" aria-label="Main Navigation">
+        <i class="fas fa-bars" id="burgerbutton"></i>
         <i class="fas fa-times" id="closeButton"></i>
-        <img
-          src="../Images/Logo.png"
-          alt="Logo"
-          class="Logo"
-          data-photo="Selfie of me"
-        />
+        <img src="../Images/Logo.png" alt="Logo" class="Logo" />
         <ul>
+          <li><a href="../index.html" class="u-url">Home</a></li>
+          <li><a href="MainBlogPage.html" class="u-url active">Blogs</a></li>
           <li>
-            <a href="../index.html" class="u-url" aria-label="Home Page" >Home</a>
+            <a href="../Portfolio/portfolio.html" class="u-url">Portfolio</a>
           </li>
           <li>
-            <a href="MainBlogPage.html" class="u-url" aria-label="Blogs Page" class="active"
-              >Blogs</a
-            >
+            <a href="../Design/MainDesignPage.html" class="u-url">Design</a>
           </li>
-          <li>
-            <a
-              href="../Portfolio/portfolio.html"
-              class="u-url"
-              aria-label="Portfolio Page" 
-              
-              >Portfolio</a
-            >
-          </li>
-          <li>
-            <a
-              href="../Design/MainDesignPage.html"
-              class="u-url"
-              aria-label="Design Page" 
-           
-              >Design</a
-            >
-          </li>
-          <li>
-            <a
-              href="../Essays/EssaysPage.html"
-              class="u-url"
-              aria-label="Essays Page" 
-              
-              >Essays</a
-            >
-          </li>
+          <li><a href="../Essays/EssaysPage.html" class="u-url">Essays</a></li>
           <li class="ContactButtonContainer">
             <button
               class="ContactButton"
@@ -94,126 +60,134 @@
         </ul>
       </nav>
     </header>
-    <main> 
-      <h1 class="normalheading">Blog 2: Intro to the World Wide Web & Website Development</h1>
-      <time datetime="2025-02-24" class="dt-published"> <span class = "timeBlog">24 February 2025, 17:00</span></time> 
+    <main>
+      <h1 class="normalheading">Blog 13: An Ethical Internet</h1>
+      <time datetime="2025-05-19" class="dt-published"
+        ><span class="timeBlog">19 May 2025, 17:00</span></time
+      >
       <div class="nav-buttons">
         <div class="ButtonBackground">
-          <a id="Previous" href="Blog1.html" aria-label="Previous Page"></a>
+          <i
+            id="Previous"
+            class="fas fa-angle-left"
+            onclick="location.href='Blog12.html'"
+          ></i>
         </div>
-        <div class="ButtonBackground">
-          <a id="Next" href="Blog3.html" aria-label="Next Page"></a>
+        
         </div>
       </div>
-      
-    </header>
       <section>
+        <h3>The Internet as a moral space</h3>
         <article>
-          <h3>URL Scheme and Folder structure</h3>
           <p>
-            This week, we began a simple introduction in the Html language and
-            website development. We touched base on "What is a website" and
-            "What are the components that create what we know as a website". A
-            consistent word was repeatedly brought up this week that properly
-            dissects the answers to these queries. The word was "Wireframe"
-            which was explained as the outline and layout of the "Website" in
-            which the difference between a website and web page was illustrated.
-            In this,the purpose of HTML was brought to light as it was explained
-            as the creation of structure of the website and not the styling. it
-            was referred to as the bones( Human body) of the website. This is
-            alluded to how the use of html creates the main foundation of your
-            website and how it initializes the various information from the
-            folders created. This led to conversations about folders and how in
-            industry projects are preferred to be laid out in a neat and orderly
-            fashion. This was to implemented in our own project folders, in
-            which different designated information should be placed in their own
-            folders underneath the project folder. In this, my folder structure
-            was laid out in this specific format.
-            <ul class="BlogLists">
-                <li>Blogs - in which our weekly
-                    blog post would fall under, stored as index html files with names
-                    relative to the different blog posts </li> 
-                    <li> Images - This is where the PNG
-                        files of our images will be saved.  </li> 
-                <li>Scripts - The specific scripts
-                    that specifies our javascript code.</li>  
-                    <li>Styling - this is where my
-                        specific CSS code will be saved for the purpose of making our
-                        website aesthetically pleasing</li>
-                <li>index Html - this is described as our
-                    home page in which an introduction of who i am will be written</li>
-            </ul>
-           <section> 
-            <article>  
-              <p>
-            In
-            terms of the URL scheme, i didnt do too much of it because lucky for
-            us Github handles the URL scheme and also gives the necessary
-            license that we require.If we didnt have it, i would need a deeper
-            dive in URL scheme as a concept in order to initialize the website
-            as its own identity.  
-            </p>
-          </article> 
-          </section>
+            When I consider what an ethical internet looks like to me, I compare
+            it to my previous view on ethics in general, alluding as a matter of
+            simply enforcing rules,restricting harmful content(protecting users)
+            and adjusting technical/cookie settings. Rather, I have come to
+            understand the internet as a moral environment,a space that carries
+            with it the weight of ethical responsibility. Inspired by the work
+            of media theorist Roger Silverstone and the reflections of Shani
+            Orgad in “The Internet as a Moral Space”, I now view the internet
+            not just as a tool for interaction, but as a place where decisions
+            about what people can see, who can use a site, and how they can
+            interact with it affect the lives of others. We as people never know
+            the reach we have on various audiences hence a need of caution is
+            required.
           </p>
-          <h3>Website Inspirations</h3>
-         <ul class="BlogLists">
-            <li>WIX.com</li>
-            <li>Unity</li>
-            <li>store.steampowered.com</li> 
-            <li>Fifa.com</li>
-         </ul> 
 
-         <p> WIX.com Unity store.steampowered.com Fifa.com </p>
-          <h3>
-            You Say You Want a Revolution? Hypertext and the Laws of Media
-            (1991)' - Moulthrop, S.
-          </h3>
           <p>
-            The essay created by Moulthrop entails the creation of the Xanadu by
-            Ted Nelson as a linkage and read only system. He frames as a digital
-            equivalent of a library but on a global and interlinked stage. He
-            continues to reference Bush and his ideals and vision of memex to
-            further elaborate the creation of the web and traces the very steps
-            that led to its invention. He does this elaborate the historical
-            information of hypertext and growth interactivity in general. He
-            further extends on the impact of hypertext in context of "Laws of
-            media " by McLuhan, which questions its :  
-            </p> 
-            <ul class="BlogLists">
-                <li> its ability to enhance</li> 
-                <li> what does it render obsolete</li>
-                <li>What does it revive/retrieve that was
-                    previously obsolete</li> 
-                 <li>What happens when its taken to its limits</li>
-            </ul> 
+            My own development as a Web developer has derived a familiar path. I
+            began by focusing on structure, user experience, and functionality.
+            I wanted my website to run efficiently, look clean, and be easy to
+            navigate. Initially, it was built as a series of HTML pages, but as
+            I introduced CSS and JavaScript to manage dynamic content such as an
+            automatic navigation bar and interactive blog listings,I realized
+            that my design decisions were also social and ethical ones. Each
+            time I made the interface more responsive or the navigation more
+            intuitive, I was doing more than improving usability. I was shaping
+            how others experienced the space/my website, and by extension, how
+            they felt seen by my design, how they felt included and or
+            excluded.Essentially i was navigating their interactivity and user
+            experience to what i would derive as a “ethical internet” Shaping
+            their emotions in either a positive or negative way.
+          </p>
 
-            <p> With
-            context to these questions, Moulthrop essay elaborates that
-            Hypertext creates and alludes an interconnected network similar to
-            fast food chains in which retrieving and linking information occurs
-            in an improved way. A way in which readers may connect different
-            ideas to different texts and information and overall be in a larger
-            platform for interactivity. Therefore answering the order of
-            enhancement. He also mentions how the effect of hypertext may create
-            a downfall for print culture which may can also be referred to as
-            "the death of the book" in this way, this alludes a change of the
-            traditional way of interacting with media in creating a new one with
-            passive media mixed with active engagement. He then further extends
-            his points by mentioning that Hypertext brings back older means of
-            information engagement, he emphasizes that the knowledge may be
-            passed on the premise of linked and associative text and commentary
-            provided by user inputs hence connectivity through ideas evolves.He
-            also further extends on the consequences and the need of control on
-            this future venture. But i was very confused on how to further
-            elaborate on his opinion here (Sorry Not Sorry). Although Moulthrop
-            wrote this during the early development of the web, his concerns are
-            still highly relevant. His warning that hypertext might be taken
-            over by corporations has become a reality, as seen in the dominance
-            of tech giants like Google and Facebook. However, the growth of
-            open-access platforms shows the democratic element he imagined,
-            showing that hypertext can still serve for broader access to
-            information.
+          <p>
+            Reading Silverstone’s work added a deeper layer to this my thinking
+            and definition to an ethical internet. He argued that the media of
+            which the internet is now an inseparable part constitute a moral
+            space, one where the quality of our relationships with others,
+            particularly distant relations(people we relatively don't know), is
+            continuously negotiated. One of his most interesting contributions
+            is the concept of “proper distance,” the idea that ethical
+            relationships require a balance in a sense that it is close enough
+            to acknowledge and care for the other, yet distant enough to respect
+            their difference. In digital spaces, where proximity is easily faked
+            and connection can be superficial and unreal, this idea challenges
+            the dominant view that more interaction automatically means deeper
+            engagement making us question it ethically as a whole.
+          </p>
+
+          <p>
+            Silverstone criticises the kind of connectivity and concept of
+            relationship the internet often promotes,he emphasises on the manner
+            social networks and algorithms bring people closer and make
+            differences less visible, but this doesn't always encourage people
+            to act responsibly. As Shani Orgad explains in her interpretation of
+            his work,explaining that the problem isn’t how far apart people are
+            online, but that we often don’t feel responsible for others we
+            interact with from a distance. This feels especially true today,
+            where being “connected” doesn’t always mean we understand, care
+            about, or respect each other hence bringing back the fact that
+            interactivity feels superficial and fake in relation to the
+            internet. In fact, the architecture of many online platforms seems
+            to encourage superficial engagement for example: likes, shares, and
+            fleeting reactions rather than meaningful understanding or
+            obligation and responsibility.
+          </p>
+
+          <p>
+            This insight changed how I thought about even basic features on my
+            site.I began to question whether this type of engagement truly
+            invited users to reflect or care about the content. True
+            responsibility, as Silverstone emphasized, It’s not just about
+            give-and-take or numbers. True responsibility means caring no matter
+            what, even if nothing comes back in return.
+          </p>
+
+          <p>
+            Another important idea from Silverstone’s work is the need for
+            hospitality. Online, this means making room for people who may not
+            reply, agree with us, or fit in with the mainstream. An ethical
+            internet isn’t based on the idea of “I’ll listen to you because you
+            listened to me.” Instead, it’s about choosing to recognize and
+            include others no matter how they respond. This is especially
+            important when we design for accessibility and inclusion. We need to
+            make sure people who are often left out because of disability,
+            language, internet access, or social barriers can not only use
+            digital spaces but also feel truly welcomed in them.
+          </p>
+
+          <p>
+            So what does an ethical internet look like to me today? It is a
+            space that is inclusive by design, where difference is not only
+            tolerated but welcomed. It is an environment where users are
+            encouraged to slow down, reflect, and engage thoughtfully, rather
+            than being swept up in automated feeds or manipulative design
+            patterns. It is built on transparency, where both users and platform
+            owners are accountable for the structures they create and sustain.
+            Most importantly, it is a space where care is built into the very
+            architecture where hospitality, not just connection, is the guiding
+            principle.
+          </p>
+
+          <h4>References:</h4>
+          <p>
+            Orgad, S. (2007) ‘The internet as a moral space: the legacy of Roger
+            Silverstone’, New Media & Society, 9(1), pp. 33–41. Available at:
+            <a href="https://doi.org/10.1177/1461444807075202" target="_blank"
+              >https://doi.org/10.1177/1461444807075202</a
+            >.
           </p>
         </article>
       </section>
@@ -221,26 +195,18 @@
     <button id="backToTopBtn" aria-label="Back to top">
       <i class="fas fa-arrow-up"></i>
     </button>
-  </body> 
-  <footer> 
-   <div id="wrapper">
-    <ul>
-         <li class="btn"><i class="fas fa-angle-left"></i></li>
-        <li class="numb"><span>1</span></li>
-        <li class="numb active"><span>2</span></li>
-        <li class="numb"><span>3</span></li>
-        <li class="numb"><span>4</span></li>
-        <li class="numb"><span>5</span></li> 
-        <li class="numb"><span>7</span></li>
-        <li class="numb"><span>8</span></li>
-        <li class="numb"><span>9</span></li>
-        <li class="numb"><span>10</span></li>
-        <li class="numb"><span>11</span></li> 
-        <li class="numb"><span>12</span></li>
-        <li class="numb"><span>13</span></li>
-        
-        
-        <li class="btn"><i class="fas fa-angle-right"></i></li> 
-    </ul>
-</div></footer>
+    <footer>
+      <div id="wrapper">
+        <ul>
+          <li class="btn"><i class="fas fa-angle-left"></i></li>
+          <li class="numb"><span>11</span></li>
+          <li class="numb"><span>12</span></li>
+          <li class="numb"><span>13</span></li>
+          <li class="numb active"><span>14</span></li>
+          <li class="numb"><span>15</span></li>
+          <li class="btn"><i class="fas fa-angle-right"></i></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

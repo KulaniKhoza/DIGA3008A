@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog2</title> 
+    <title>Blog11</title>
     <link rel="stylesheet" href="../Style.css" />
     <link rel="stylesheet" href="../normalize.css" />
-    <link rel="stylesheet" href="Blogs.css" /> 
+    <link rel="stylesheet" href="Blogs.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -14,75 +14,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Unna:wght@400;700&display=swap"
       rel="stylesheet"
-    /> 
+    />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap"
       rel="stylesheet"
-    /> 
-    <script src="../Scripts/ActivePage.js"></script> 
-    <script src="../Scripts/Script.js"></script> 
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../Scripts/ActivePage.js"></script>
+    <script src="../Scripts/Script.js"></script>
     <script src="../Scripts/Blogs.js"></script>
   </head>
   <body>
     <header class="page header">
-      <nav class="menu" aria-label="Main Navigation"> 
-        <!-- BurgerButton-->
-        <i class="fas fa-bars" id="burgerbutton" id="menu-icon"></i>
-        <!-- CloseButton-->
+      <nav class="menu" aria-label="Main Navigation">
+        <i class="fas fa-bars" id="burgerbutton"></i>
         <i class="fas fa-times" id="closeButton"></i>
-        <img
-          src="../Images/Logo.png"
-          alt="Logo"
-          class="Logo"
-          data-photo="Selfie of me"
-        />
+        <img src="../Images/Logo.png" alt="Logo" class="Logo" />
         <ul>
+          <li><a href="../index.html" class="u-url">Home</a></li>
+          <li><a href="MainBlogPage.html" class="u-url active">Blogs</a></li>
           <li>
-            <a href="../index.html" class="u-url" aria-label="Home Page" >Home</a>
+            <a href="../Portfolio/portfolio.html" class="u-url">Portfolio</a>
           </li>
           <li>
-            <a href="MainBlogPage.html" class="u-url" aria-label="Blogs Page" class="active"
-              >Blogs</a
-            >
+            <a href="../Design/MainDesignPage.html" class="u-url">Design</a>
           </li>
-          <li>
-            <a
-              href="../Portfolio/portfolio.html"
-              class="u-url"
-              aria-label="Portfolio Page" 
-              
-              >Portfolio</a
-            >
-          </li>
-          <li>
-            <a
-              href="../Design/MainDesignPage.html"
-              class="u-url"
-              aria-label="Design Page" 
-           
-              >Design</a
-            >
-          </li>
-          <li>
-            <a
-              href="../Essays/EssaysPage.html"
-              class="u-url"
-              aria-label="Essays Page" 
-              
-              >Essays</a
-            >
-          </li>
+          <li><a href="../Essays/EssaysPage.html" class="u-url">Essays</a></li>
           <li class="ContactButtonContainer">
             <button
               class="ContactButton"
@@ -94,126 +60,119 @@
         </ul>
       </nav>
     </header>
-    <main> 
-      <h1 class="normalheading">Blog 2: Intro to the World Wide Web & Website Development</h1>
-      <time datetime="2025-02-24" class="dt-published"> <span class = "timeBlog">24 February 2025, 17:00</span></time> 
+    <main>
+      <h1 class="normalheading">Blog 11: Digital Inequalities and AI</h1>
+      <time datetime="2025-05-05" class="dt-published"
+        ><span class="timeBlog">5 May 2025, 23:00</span></time
+      >
       <div class="nav-buttons">
         <div class="ButtonBackground">
-          <a id="Previous" href="Blog1.html" aria-label="Previous Page"></a>
+          <i
+            id="Previous"
+            class="fas fa-angle-left"
+            onclick="location.href='Blog10.html'"
+          ></i>
         </div>
         <div class="ButtonBackground">
-          <a id="Next" href="Blog3.html" aria-label="Next Page"></a>
+          <i
+            id="Next"
+            class="fas fa-angle-right"
+            onclick="location.href='Blog12.html'"
+          ></i>
         </div>
       </div>
-      
-    </header>
       <section>
+        <h3>
+          Lutz(2019) - "Digital inequalities in the Age of Artificial
+          intelligence"
+        </h3>
         <article>
-          <h3>URL Scheme and Folder structure</h3>
           <p>
-            This week, we began a simple introduction in the Html language and
-            website development. We touched base on "What is a website" and
-            "What are the components that create what we know as a website". A
-            consistent word was repeatedly brought up this week that properly
-            dissects the answers to these queries. The word was "Wireframe"
-            which was explained as the outline and layout of the "Website" in
-            which the difference between a website and web page was illustrated.
-            In this,the purpose of HTML was brought to light as it was explained
-            as the creation of structure of the website and not the styling. it
-            was referred to as the bones( Human body) of the website. This is
-            alluded to how the use of html creates the main foundation of your
-            website and how it initializes the various information from the
-            folders created. This led to conversations about folders and how in
-            industry projects are preferred to be laid out in a neat and orderly
-            fashion. This was to implemented in our own project folders, in
-            which different designated information should be placed in their own
-            folders underneath the project folder. In this, my folder structure
-            was laid out in this specific format.
-            <ul class="BlogLists">
-                <li>Blogs - in which our weekly
-                    blog post would fall under, stored as index html files with names
-                    relative to the different blog posts </li> 
-                    <li> Images - This is where the PNG
-                        files of our images will be saved.  </li> 
-                <li>Scripts - The specific scripts
-                    that specifies our javascript code.</li>  
-                    <li>Styling - this is where my
-                        specific CSS code will be saved for the purpose of making our
-                        website aesthetically pleasing</li>
-                <li>index Html - this is described as our
-                    home page in which an introduction of who i am will be written</li>
-            </ul>
-           <section> 
-            <article>  
-              <p>
-            In
-            terms of the URL scheme, i didnt do too much of it because lucky for
-            us Github handles the URL scheme and also gives the necessary
-            license that we require.If we didnt have it, i would need a deeper
-            dive in URL scheme as a concept in order to initialize the website
-            as its own identity.  
-            </p>
-          </article> 
-          </section>
+            Christian Lutz’s article speaks on an interesting upcoming issue of
+            how artificial intelligence (AI) systems risk amplifying existing
+            social and digital inequalities. Through a close reading of the
+            text, I was struck by how the author dissects both the technical and
+            social frameworks of AI implementation, especially in public
+            services and employment sectors. After one brief reading of the
+            text, I struggled to relay and understand his intention and meaning
+            but after a brief second and third reading is when everything shone
+            through for me, his purpose along with my interpretation is to break
+            down digital inequality and the underlying bias that serves it.
           </p>
-          <h3>Website Inspirations</h3>
-         <ul class="BlogLists">
-            <li>WIX.com</li>
-            <li>Unity</li>
-            <li>store.steampowered.com</li> 
-            <li>Fifa.com</li>
-         </ul> 
-
-         <p> WIX.com Unity store.steampowered.com Fifa.com </p>
-          <h3>
-            You Say You Want a Revolution? Hypertext and the Laws of Media
-            (1991)' - Moulthrop, S.
-          </h3>
           <p>
-            The essay created by Moulthrop entails the creation of the Xanadu by
-            Ted Nelson as a linkage and read only system. He frames as a digital
-            equivalent of a library but on a global and interlinked stage. He
-            continues to reference Bush and his ideals and vision of memex to
-            further elaborate the creation of the web and traces the very steps
-            that led to its invention. He does this elaborate the historical
-            information of hypertext and growth interactivity in general. He
-            further extends on the impact of hypertext in context of "Laws of
-            media " by McLuhan, which questions its :  
-            </p> 
-            <ul class="BlogLists">
-                <li> its ability to enhance</li> 
-                <li> what does it render obsolete</li>
-                <li>What does it revive/retrieve that was
-                    previously obsolete</li> 
-                 <li>What happens when its taken to its limits</li>
-            </ul> 
+            Christian Lutz opens his argument by challenging the common
+            perception that artificial intelligence (AI) systems are inherently
+            objective or neutral. He asserts that this assumption is deeply
+            flawed and potentially dangerous because it ignores the
+            socio-technical realities of how AI systems are created and
+            deployed. Instead of being impartial tools, AI systems reflect the
+            biases both of the individuals and institutions that design them, as
+            well as the data sets they are trained on. The data is formed by
+            historical data entries created by humans which will inherently have
+            biased and objective information and opinions, which in some cases
+            could be seen as mis-information.
+          </p>
+          <p>
+            When AI is used in areas like policing, hiring, or welfare, it can
+            unfairly disadvantage demographic groups by instilling
+            discriminatory patterns in them. This creates social barriers and
+            biases that become embedded in our society as norms, these biases
+            become harder to detect because algorithms appear “neutral” or fair
+            ,but in actual fact they are masking their impact just because it
+            was created by technology. Lutz argues that designing,creating and
+            publishing AI systems is a deeply social political and ethical
+            process, requiring transparency and honesty to try close the
+            disparity and at the same time allowing input from these
+            demographics to avoid deepening social inequalities. All in all He
+            simply means the outcome of the ai system is rooted in choices of
+            information influenced by pre-determined constructs.
+          </p>
+          <p>
+            Later in his article, Lutz explains that one of the big problems
+            with artificial intelligence (AI) is that it creates a huge gap
+            between those who understand and control it, and those who are
+            affected by it who may not have access to it. Most regular people
+            don’t know how these systems work, while big tech companies and
+            governments have the knowledge, tools, and data to build and use
+            them. This creates what he calls “informational symmetry”, which
+            means that one side has much more information and power than the
+            others hence creating the huge disparity in digital inequality
+            mentioned over and over in the passage
+          </p>
+          <p>
+            Because AI systems are often complicated and not very transparent,
+            people usually don’t get to see how decisions are made. For example,
+            if someone is rejected from a job, denied government help, or is
+            rated as “high risk” by an algorithm, they might never be told why
+            or how that decision was made. This makes it very hard for people to
+            speak up, ask questions, or fix unfair treatment.
+          </p>
+          <p>
+            Lutz says this is dangerous because it weakens democracy. In a
+            healthy democracy, people should be able to understand and challenge
+            decisions that affect their lives. But with AI, more and more
+            important decisions are being made by systems that are hidden from
+            view and controlled by a few powerful organizations. This can lead
+            to a loss of trust in public systems and can make people feel
+            powerless.
+          </p>
+          <p>
+            To sum up, Christian Lutz’s article helped me understand that AI is
+            not just a smart tool,it can also be unfair if we’re not careful. It
+            often reflects human bias and can increase unfairness in society,
+            especially when people don’t know how it works or can’t challenge
+            its decisions. Lutz shows that AI systems are shaped by people and
+            their choices, so we need to make sure these systems are clear,
+            fair, and involve everyone and not just powerful companies or
+            governments. His message is clear, make AI fair for all, we need
+            more openness, more equality, and more public involvement.
+          </p>
 
-            <p> With
-            context to these questions, Moulthrop essay elaborates that
-            Hypertext creates and alludes an interconnected network similar to
-            fast food chains in which retrieving and linking information occurs
-            in an improved way. A way in which readers may connect different
-            ideas to different texts and information and overall be in a larger
-            platform for interactivity. Therefore answering the order of
-            enhancement. He also mentions how the effect of hypertext may create
-            a downfall for print culture which may can also be referred to as
-            "the death of the book" in this way, this alludes a change of the
-            traditional way of interacting with media in creating a new one with
-            passive media mixed with active engagement. He then further extends
-            his points by mentioning that Hypertext brings back older means of
-            information engagement, he emphasizes that the knowledge may be
-            passed on the premise of linked and associative text and commentary
-            provided by user inputs hence connectivity through ideas evolves.He
-            also further extends on the consequences and the need of control on
-            this future venture. But i was very confused on how to further
-            elaborate on his opinion here (Sorry Not Sorry). Although Moulthrop
-            wrote this during the early development of the web, his concerns are
-            still highly relevant. His warning that hypertext might be taken
-            over by corporations has become a reality, as seen in the dominance
-            of tech giants like Google and Facebook. However, the growth of
-            open-access platforms shows the democratic element he imagined,
-            showing that hypertext can still serve for broader access to
-            information.
+          <h4>References:</h4>
+          <p>
+            Lutz, C., 2019. Digital inequalities in the age of artificial
+            intelligence and big data. Human Behavior and Emerging Technologies,
+            1(2), pp.141-148.
           </p>
         </article>
       </section>
@@ -221,26 +180,18 @@
     <button id="backToTopBtn" aria-label="Back to top">
       <i class="fas fa-arrow-up"></i>
     </button>
-  </body> 
-  <footer> 
-   <div id="wrapper">
-    <ul>
-         <li class="btn"><i class="fas fa-angle-left"></i></li>
-        <li class="numb"><span>1</span></li>
-        <li class="numb active"><span>2</span></li>
-        <li class="numb"><span>3</span></li>
-        <li class="numb"><span>4</span></li>
-        <li class="numb"><span>5</span></li> 
-        <li class="numb"><span>7</span></li>
-        <li class="numb"><span>8</span></li>
-        <li class="numb"><span>9</span></li>
-        <li class="numb"><span>10</span></li>
-        <li class="numb"><span>11</span></li> 
-        <li class="numb"><span>12</span></li>
-        <li class="numb"><span>13</span></li>
-        
-        
-        <li class="btn"><i class="fas fa-angle-right"></i></li> 
-    </ul>
-</div></footer>
+    <footer>
+      <div id="wrapper">
+        <ul>
+          <li class="btn"><i class="fas fa-angle-left"></i></li>
+          <li class="numb"><span>9</span></li>
+          <li class="numb"><span>10</span></li>
+          <li class="numb active"><span>11</span></li>
+          <li class="numb"><span>12</span></li>
+          <li class="numb"><span>13</span></li>
+          <li class="btn"><i class="fas fa-angle-right"></i></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

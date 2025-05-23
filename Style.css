@@ -323,6 +323,17 @@ figcaption {
   font-size: 3.8vh;
   margin: 1%;
 }
+blockquote {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #fffafa;
+
+  /* or use your site’s accent color */
+  margin: 2rem 1rem;
+  padding: 1rem 1.5rem;
+  quotes: "“" "”" "‘" "’";
+}
 figure img {
   width: auto;
   height: auto;
@@ -362,11 +373,13 @@ figure img {
 }
 
 #Previous {
-  transform: rotate(315deg);
+  color: white;
+  cursor: pointer;
 }
 
 #Next {
-  transform: rotate(135deg);
+  color: white;
+  cursor: pointer;
 }
 .Caption {
   color: white;
@@ -574,7 +587,7 @@ nav {
     position: fixed;
     justify-content: center;
     width: 100%;
-    background-color: rgba(5, 5, 0, 0.95); /* More opaque background */
+    background-color: rgb(5, 5, 0.97); /* More opaque background */
     height: 90vh; /* Full height minus navbar */
     text-align: center;
     line-height: 100%;
