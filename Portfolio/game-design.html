@@ -13,20 +13,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Unna:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <script src="../Scripts/ActivePage.js"></script>
@@ -37,9 +36,7 @@
   <body>
     <header class="page header">
       <nav class="menu" aria-label="Main Navigation">
-        <!-- BurgerButton-->
-        <i class="fas fa-bars" id="burgerbutton" id="menu-icon"></i>
-        <!-- CloseButton-->
+        <i class="fas fa-bars" id="burgerbutton"></i>
         <i class="fas fa-times" id="closeButton"></i>
         <img
           src="../Images/Logo.png"
@@ -64,8 +61,7 @@
           <li>
             <a
               href="portfolio.html"
-              class="active"
-              class="u-url"
+              class="active u-url"
               aria-label="Portfolio Page"
               >Portfolio</a
             >
@@ -97,34 +93,38 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <h1 class="normalheading">Game Design Portfolio</h1>
 
-      <div class="games-container">
-        <div class="game-card">
-          <div class="game-image">
+      <div class="content-container">
+        <div class="content-card">
+          <div class="card-image">
             <img
               src="../Images/Screenshot 2025-05-19 221510.png"
               alt="2D Platformer Game Screenshot"
-              class="game-screenshot"
+              class="screenshot"
             />
           </div>
-          <div class="game-content">
+          <div class="card-content">
             <h2>2D PLATFORMER GAME</h2>
             <p class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              consequatur aspernatur deleniti hic, ratione corporis minima nam
-              blanditiis, cum eaque, quaerat eius illo eos impedit mollitia
-              vitae natus animi alias. Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Maxime soluta asperiores maiores cum sunt quas
-              repellendus provident debitis ex atque, ab incidunt aliquam modi
-              laudantium culpa ea, nobis beatae illo? Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Eaque cumque consequatur libero
-              blanditiis aperiam facere est, at eligendi ratione repellat
-              quibusdam ipsa natus, explicabo quod sequi iure! Enim, dicta
-              totam!
+              This 2D platformer prototype challenges players to navigate a
+              side-scrolling environment using precise movement and jumping
+              mechanics. The primary goal is to collect coins scattered
+              throughout the level, with each coin contributing to a visible
+              score counter. The game features two levels that test the player's
+              timing, precision, and strategic thinking. In Level 1, players
+              must move across varied terrain and reach elevated platforms to
+              collect coins. In Level 2, gameplay intensifies with the
+              introduction of moving pipe obstacles, requiring players to time
+              their jumps carefully to pass through narrow gaps and collect
+              mid-air coins. Collision with obstacles results in a reset to the
+              last checkpoint. The game is designed to maintain a careful
+              balance between challenge and fairness, encouraging replayability
+              while providing a rewarding sense of progression.
             </p>
-            <div class="game-tags">
+            <div class="card-tags">
               <span class="tag">Unity</span>
               <span class="tag">C#</span>
               <span class="tag">2D</span>
@@ -139,30 +139,34 @@
           </div>
         </div>
 
-        <div class="game-card">
-          <div class="game-image">
+        <div class="content-card">
+          <div class="card-image">
             <img
               src="../Images/FarmSimulatorImage.png"
               alt="Farming Simulator Screenshot"
-              class="game-screenshot"
+              class="screenshot"
             />
           </div>
-          <div class="game-content">
+          <div class="card-content">
             <h2>FARMING SIMULATOR</h2>
             <p class="description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              consequatur aspernatur deleniti hic, ratione corporis minima nam
-              blanditiis, cum eaque, quaerat eius illo eos impedit mollitia
-              vitae natus animi alias. Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Maxime soluta asperiores maiores cum sunt quas
-              repellendus provident debitis ex atque, ab incidunt aliquam modi
-              laudantium culpa ea, nobis beatae illo? Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Eaque cumque consequatur libero
-              blanditiis aperiam facere est, at eligendi ratione repellat
-              quibusdam ipsa natus, explicabo quod sequi iure! Enim, dicta
-              totam!
+              The Farming Simulator game is a 2D interactive experience focused
+              on strategic resource management within a farm environment.
+              Players begin by purchasing items from a shop using limited
+              in-game currency, including seeds and animal feed, which are added
+              to their inventory and used to interact with the game world. Seeds
+              can be planted on plowed soil, and animals like chickens can be
+              fed to produce eggs that generate income. Players must balance
+              spending on various activities such as plowing land, planting
+              crops, and feeding animals, as overspending in one area can stall
+              overall progress. The economic system encourages thoughtful
+              decision-making, where successful actions lead to rewards and
+              level-ups that unlock further gameplay opportunities. The core
+              challenge lies in maintaining an efficient and sustainable farming
+              operation while gradually expanding and upgrading through smart
+              planning and timely execution.
             </p>
-            <div class="game-tags">
+            <div class="card-tags">
               <span class="tag">Unity</span>
               <span class="tag">POV</span>
               <span class="tag">Simulation</span>
@@ -177,6 +181,7 @@
         </div>
       </div>
     </main>
+
     <button id="backToTopBtn" aria-label="Back to top">
       <i class="fas fa-arrow-up"></i>
     </button>
