@@ -33,19 +33,6 @@
     <script src="../Scripts/ActivePage.js"></script>
     <script src="../Scripts/Script.js"></script>
     <script src="../Scripts/Blogs.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const blogPages = Array.from({ length: 13 }, (_, i) => i + 1); // [1, 2, ..., 13]
-        const paginationButtons = document.querySelectorAll("#wrapper .numb");
-
-        paginationButtons.forEach((button, index) => {
-          button.addEventListener("click", () => {
-            const pageNumber = blogPages[index];
-            window.location.href = `Blog${pageNumber}.html`;
-          });
-        });
-      });
-    </script>
   </head>
   <body>
     <header class="page header">
@@ -256,10 +243,10 @@
       <div id="wrapper">
         <ul>
           <li class="numb"><span>1</span></li>
-          <li class="numb active"><span>2</span></li>
+          <li class="numb"><span>2</span></li>
           <li class="numb"><span>3</span></li>
           <li class="numb"><span>4</span></li>
-          <li class="numb"><span>5</span></li>
+
           <li class="numb"><span>7</span></li>
 
           <li class="numb"><span>9</span></li>

@@ -10,3 +10,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const currentURL = window.location.pathname;
+  const blogPageMatch = currentURL.match(/Blog(\d+)\.html$/i);
+
+  if (blogPageMatch) {
+    const currentPage = blogPageMatch[1];
+    const paginationItems = document.querySelectorAll("footer ul li.numb");
+
+    paginationItems.forEach((item) => {
+      if (item.textContent.trim() === currentPage) {
+        item.classList.add("active");
+      } else {
+        item.classList.remove("active");
+      }
+    });
+  }
+});
