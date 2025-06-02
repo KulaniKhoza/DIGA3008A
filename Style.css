@@ -564,7 +564,133 @@ nav {
 .DownloadEssay:hover {
   background-color: #1570cd;
 }
+/* ================= STYLES FOR Footer ================= */
+main {
+  margin-bottom: 100px;
+}
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: rgb(0, 0, 17);
+  color: #fff;
+  padding: 50px 20px;
+}
+.Footcontainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+h6 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+}
+.col-1 {
+  flex-basis: 30%;
+  padding: 10px;
+  margin-bottom: 20px;
 
+  border-radius: 10px;
+}
+.col-1 img {
+  width: 55px;
+  margin-bottom: 15px;
+  width: 13vh;
+  height: 10vh;
+  border-radius: 10%;
+}
+.col-1 p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: start;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+}
+.LogoContainer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.LogoContainer img {
+  width: 13vh;
+  height: 10vh;
+  border-radius: 10%;
+}
+
+.LogoContainer h6 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.col-2 ul,
+.col-3 ul {
+  list-style: circle;
+}
+.col-2 ul li,
+.col-3 ul li {
+  margin-bottom: 10px;
+}
+.col-2 ul li a,
+.col-3 ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: #25262a;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: all 0.5s ease;
+}
+.social-icons {
+  margin-top: 20px;
+}
+.social-icons a:hover {
+  background: #007ea7;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.footer-2 {
+  width: 100%;
+
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.3rem;
+}
+
+/*Media Queries for NavBar*/
 @media (max-width: 940px) {
   #burgerbutton {
     display: block;
