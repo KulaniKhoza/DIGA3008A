@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Kulani Khoza’s portfolio showcasing projects in web development, digital arts, and design. See detailed games, code samples, and Tutoring examples."
+    />
+    <meta
+      name="keywords"
+      content="Kulani Khoza portfolio, Electronic projects, digital arts portfolio, Maths Tutor, coding samples"
+    />
+    <meta name="author" content="Kulani Khoza" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="../Style.css" />
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../Scripts/ActivePage.js"></script>
+    <script src="../Scripts/StickyNav.js"></script>
+    <script src="../Scripts/Script.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="page header">
+      <nav class="menu" aria-label="Main Navigation">
+        <!-- BurgerButton-->
+        <i class="fas fa-bars" id="burgerbutton" id="menu-icon"></i>
+        <!-- CloseButton-->
+        <i class="fas fa-times" id="closeButton"></i>
+        <img
+          src="../Images/Logo.png"
+          alt="Logo"
+          class="Logo"
+          data-photo="Selfie of me"
+        />
+        <ul>
+          <li>
+            <a href="../index.html" class="u-url" aria-label="Home Page"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Blogs/MainBlogPage.html"
+              class="u-url"
+              aria-label="Blogs Page"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <a
+              href="portfolio.html"
+              class="active"
+              class="u-url"
+              aria-label="Portfolio Page"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Design/MainDesignPage.html"
+              class="u-url"
+              aria-label="Design Page"
+              >Design</a
+            >
+          </li>
+          <li>
+            <a
+              href="../Essays/EssaysPage.html"
+              class="u-url"
+              aria-label="Essays Page"
+              >Essays</a
+            >
+          </li>
+          <li class="ContactButtonContainer">
+            <button
+              class="ContactButton"
+              onclick="location.href='../index.html#Contact'"
+            >
+              Contact
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="normalheading">Electronic Project</h1>
+      <div class="content-container">
+        <div class="content-card">
+          <div class="Ecard-image">
+            <img
+              src="../Images/Cicuit.png"
+              alt="circuit Screenshot"
+              class="Escreenshot"
+            />
+          </div>
+          <div class="card-content">
+            <h2>Echoes of manchine</h2>
+            <p class="Content">
+              This subsystem uses LDRs ,an Ardiuno uno microcontroller and a
+              Neopixel ring. The LDRs detect the intensity of the light from the
+              Mic system and outputs the result in patterns on the Neopixel ring
+              varing on the intensity. The PIR sensors detect direction of
+              motion "of the birds" and display light on the neopixel ring in
+              direction of the motion as well as on the array of leds. The
+              Ultrasonic sensor detects a nearby hand acting as a bird,
+              triggering a green NeoPixel animation. This visually represents
+              the bird's (hand's) presence in the nest.
+            </p>
+            <h2>How it works</h2>
+            <ul class="EList">
+              <li>
+                The LDRs measure light intensity, influencing the NeoPixel
+                patterns.
+              </li>
+              <li>
+                PIR sensors detect motion direction, illuminating the NeoPixel
+                ring accordingly.
+              </li>
+              <li>
+                The ultrasonic sensor detects a nearby hand, triggering a green
+                NeoPixel animation.
+              </li>
+              <li>
+                For more information:
+                <a
+                  class="Elink"
+                  href="https://github.com/Gifted-one/EchoesOf_a_Machine"
+                  >GitHub Repository: Echoes of a Machine</a
+                >
+              </li>
+            </ul>
+            <h2>Simulation</h2>
+            <ul class="EList">
+              <li>
+                Open wokwi.com to view the simulation of the project ,press the
+                button below.
+              </li>
+              <li>Click play to start the simulation.</li>
+              <li>
+                Toggle the Photoresistors to see how the NeoPixel ring responds
+                to different light intensities.
+              </li>
+              <li>
+                Toggle the PIR sensors to see how the NeoPixel ring responds to
+                motion.(click the PIR sensors to toggle them click both of them
+                to see the full effect)
+              </li>
+              <li>
+                Toggle the Ultrasonic sensor to see how the NeoPixel ring
+                responds to a nearby hand.
+              </li>
+            </ul>
+            <div class="card-tags">
+              <span class="tag">NeoPixel</span>
+              <span class="tag">C++</span>
+              <span class="tag">stimuli</span>
+              <span class="tag">Arduino</span>
+            </div>
+            <button
+              class="view-project-btn"
+              onclick="window.location.href='https://wokwi.com/projects/433044341168836609'"
+            >
+              Simulation
+            </button>
+          </div>
+        </div>
+      </div>
+      <p>
+        This is a project I did using an Arduino. It was a simple project that
+        involved using an Arduino to control an LED light. The code was written
+        in C++ and the circuit was built on a breadboard. The project was a
+        great way to learn about electronics and programming.
+      </p>
+    </main>
+  </body>
+</html>
