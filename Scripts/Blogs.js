@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (blogPageMatch) {
     const currentPage = blogPageMatch[1];
-    const paginationItems = document.querySelectorAll("footer ul li.numb");
+    const paginationItems = document.querySelectorAll("#wrapper ul li.numb");
 
     paginationItems.forEach((item) => {
       if (item.textContent.trim() === currentPage) {

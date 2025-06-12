@@ -33,7 +33,7 @@ async function openSimulation() {
     });
 
     // Open in new tab
-    window.open("https://wokwi.com/projects/433044341168836609", "_blank");
+    window.location.href = "https://wokwi.com/projects/433044341168836609";
   } catch (error) {
     console.error("Simulation error:", error);
     alert("Failed to load simulation. Please try again later.");

@@ -84,7 +84,8 @@ async function openProject(url, button) {
     await fetch(url, { mode: "no-cors" });
 
     // Open in new tab (consistent with your simulation behavior)
-    window.open(url, "_blank");
+
+    window.location.href = url; // Redirect to the project page
   } catch (error) {
     console.error("Error opening project:", error);
     // Error state that matches your style

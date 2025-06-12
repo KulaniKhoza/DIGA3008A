@@ -227,6 +227,7 @@ time {
   width: 60%;
   height: 20%;
   margin: auto;
+  margin-bottom: 70px;
 }
 #wrapper ul li {
   list-style-type: none;
@@ -240,6 +241,11 @@ time {
   border-radius: 50px;
   color: #fff;
   padding: 15px;
+}
+#wrapper ul li:hover {
+  background-color: #007ea7;
+  color: #ffffff;
+  box-shadow: 0 0 20px;
 }
 #wrapper ul li.numb,
 #wrapper ul li.btn {
