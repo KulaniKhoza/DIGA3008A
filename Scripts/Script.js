@@ -71,3 +71,36 @@ document.querySelector(".DownloadEssay").addEventListener("click", function () {
   link.click();
   document.body.removeChild(link);
 });
+//Async function to load Projects
+// Global async function to handle all project buttons
+async function openProject(url, button) {
+  const originalText = button.innerHTML;
+
+  try {
+    // Show loading state (matches your existing style)
+    button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+    button.disabled = true;
+
+    await fetch(url, { mode: "no-cors" });
+
+    // Open in new tab (consistent with your simulation behavior)
+    window.open(url, "_blank");
+  } catch (error) {
+    console.error("Error opening project:", error);
+    // Error state that matches your style
+    button.innerHTML = '<i class="fas fa-exclamation-circle"></i> Failed!';
+
+    // Reset after delay
+    setTimeout(() => {
+      button.innerHTML = originalText;
+      button.disabled = false;
+    }, 2000);
+    return;
+  }
+
+  // Success - reset button after brief delay
+  setTimeout(() => {
+    button.innerHTML = originalText;
+    button.disabled = false;
+  }, 1000);
+}
