@@ -582,6 +582,37 @@ nav {
 .DownloadEssay2:hover {
   background-color: #1570cd;
 }
+.EList {
+  list-style-type: point;
+  padding: 0;
+  margin: 0 0;
+  font-weight: normal;
+  width: 75%;
+  font-size: 1.1rem;
+  display: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  color: #232323;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.EList ul {
+  justify-self: flex-start;
+  margin: 0;
+  align-self: center;
+  list-style-type: disc;
+}
+.EList li {
+  margin-bottom: 0.25rem;
+  position: relative;
+}
+.EList li::before {
+  position: absolute;
+  left: -1.5rem;
+  color: #007ea7;
+  font-weight: bold;
+}
 /* ================= STYLES FOR Footer ================= */
 main {
   margin-bottom: 100px;

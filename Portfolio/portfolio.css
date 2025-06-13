@@ -257,7 +257,7 @@ span {
   width: 90%;
   font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
-  margin: 0.8rem;
+  margin: 0.5rem;
   font-size: 1.15rem;
   font-style: normal;
   font-weight: 700;
@@ -356,37 +356,7 @@ span {
   transition: transform 0.5s ease;
   border-radius: 20px;
 }
-.EList {
-  list-style-type: point;
-  padding: 0;
-  margin: 0 0;
-  font-weight: normal;
-  width: 75%;
-  font-size: 1.1rem;
-  display: flex-start;
-  flex-direction: column;
-  align-items: center;
 
-  color: #232323;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-.EList ul {
-  justify-self: flex-start;
-  margin: 0;
-  align-self: center;
-  list-style-type: disc;
-}
-.EList li {
-  margin-bottom: 0.25rem;
-  position: relative;
-}
-.EList li::before {
-  position: absolute;
-  left: -1.5rem;
-  color: #007ea7;
-  font-weight: bold;
-}
 .Elink {
   text-decoration: none;
   color: #007ea7;
