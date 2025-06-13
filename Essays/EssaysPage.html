@@ -317,6 +317,377 @@
             <button class="DownloadEssay">Download</button>
           </div>
         </div>
+        <div class="content-card">
+          <div class="Ecard-content">
+            <h2>Reflection of Website Implementation</h2>
+            <p class="Content">
+              The implementation of a website is deeply influenced by its user
+              interface (UI) and user experience (UX) design. A well-structured
+              codebase not only brings the design to life but also ensures
+              performance, accessibility, and maintainability. In developing my
+              website, I carefully considered how each technical decision would
+              support both the visual design and the user journey. This essay
+              explores how UI/UX considerations shaped my implementation,
+              covering folder structure, semantic markup, metadata, CSS, and
+              JavaScript. By aligning code architecture with design principles,
+              I created a seamless experience for users while ensuring the site
+              remains scalable and easy to maintain.
+            </p>
+            <h3 class="essaysubheading">
+              Folder Structure: Organizing for an easier read
+            </h3>
+            <p class="Content">
+              A logical folder structure was essential for maintaining a clean
+              and scalable codebase. I organized my files hierarchically to
+              reflect the website’s content flow while separating concerns into
+              distinct layers.The main Directory folder, DIGA3008A, is
+              well-organized with dedicated subdirectories for project assets
+              for the such as images, PDFs, portfolio pieces, blog posts,
+              essays, and a design section that includes fonts and icons,making
+              all resources easy to locate and manage throughout the designing
+              process. Each web page has its own subdirectory, containing a
+              specific HTML file along(expect the index.html representing the
+              homepage) with page-specific stylesheets excluding some sections
+              that only require the global style sheet.Some directories contain
+              multiple HTML files for instance, the Blogs subdirectory includes
+              several individual blog post files, with each one representing a
+              separate weekly entry. Styles are systematically divided into
+              folders for global styles, reusable components, and responsive
+              layouts, allowing each page to load only the styles it requires.
+              While most pages have dedicated stylesheets tailored to their
+              content, some simpler sections rely solely on shared or global
+              styles. The “Style.css” file serves as the core stylesheet,
+              maintaining visual consistency and providing foundational styling
+              across the entire site.This modular approach promotes cleaner
+              code, easier maintenance, and better scalability.JavaScript
+              modules are grouped by functionality in the “Scripts” folder, such
+              as “Scripts.js” for menu interactions,button interactions and
+              general foundational functionality ; An APIs.js file is used for
+              data fetching and asynchronous functions, providing shared
+              functionality across the website for the specific pages where the
+              script is applied. This modular approach allows for focused
+              updates without affecting unrelated features. Additionally, I
+              adopted consistent naming conventions (e.g.,
+              “{Filename}Homepage.html”, “{Filename}.css”) to improve
+              readability and make the codebase more intuitive for future
+              collaborators.Admittedly, some naming conventions deviate from
+              standard practices. For example, homepages are typically labeled
+              as “index.html”, which I intend to correct in future iterations.
+              Similarly, the weekly blog posts are currently named “Blog1”,
+              “Blog2”, “Blog3”, etc., which doesn’t clearly reflect their
+              identity as part of a blog series. A more descriptive and
+              consistent naming structure will enhance clarity and
+              maintainability moving forward(possibly week1,week2 and etc).
+            </p>
+            <h3 class="essaysubheading">
+              Semantic Markup: Building an Accessible Foundation
+            </h3>
+            <p class="Content">
+              Semantic HTML5 elements formed the backbone of my website’s
+              structure, enhancing both accessibility and SEO. Instead of the
+              generic div containers that have scoured the internet and the tech
+              industry, I promoted the use of meaningful tags like header, nav,
+              section, main and article to provide clear context for screen
+              readers and search engines.I only used the div tag when absolutely
+              necessary typically for layout or grouping elements that didn’t
+              fit a specific semantic role. For example, the main
+              navigation(navbar) uses a nav element with class names
+              complementing its links as well as descriptive Aria labels,
+              Information and paragraphs are wrapped in section tags with
+              relevant headings. Interactive elements, such as buttons and
+              icons, include descriptive labels and allow keyboard navigation. I
+              also implemented a proper heading hierarchy (h1 for page titles,
+              h2for section headings, etc.) to create a logical document
+              outline. These choices not only improved accessibility but also
+              made the code easier to debug and style, as each element’s purpose
+              was self-evident.Admittedly, I often put normal p tags to be
+              wrapped in nested section and article as interchangeable, which
+              led to my documents being filled with nested sections and tags
+              that some may have followed an incorrect hierarchy and
+              definition,something I now recognize as bad practice. Overall, my
+              semantic markup is fairly basic, with definite room for
+              improvement. I’m learning that changing it later is more
+              challenging than expected, especially since it forms the
+              foundation of my work. Because of this, I had to come up with a
+              clear class naming system to accommodate different styles and
+              avoid confusion as the project grew.
+            </p>
+            <h3 class="essaysubheading">
+              Metadata: Enhancing Discovery and Consistency
+            </h3>
+            <p class="Content">
+              I initially underestimated the importance of metadata, treating it
+              more like a formality than a meaningful part of web development. I
+              included only the basic viewport tags and simple, generic
+              descriptions, things like “author” and “description”. I used these
+              basic conventions without fully understanding how metadata shapes
+              visibility in search engines and how content is previewed on
+              social media. I didn’t realize I was missing out until I compared
+              my work to competitors whose pages had rich fragments, eye
+              catching previews, and stronger engagement. That realization
+              changed how I approach metadata. I now see it as a strategic tool
+              rather than an afterthought. Unfortunately it was a bit late , I
+              now wish to focus on crafting unique meta descriptions, using
+              structured data for enhanced search listings, and optimizing
+              social tags like twitter and instagram tags to create better
+              searchability. These elements silently but powerfully influence
+              how users and platforms interpret and rank content. This
+              experience and my marks(Unfortanely *ha ha) taught me that
+              metadata is not just technical overhead it’s an invisible layer of
+              design that helps connect content to its audience and shapes its
+              first impression across the digital landscape
+            </p>
+            <h3 class="essaysubheading">
+              CSS: Styling with Purpose and Consistency
+            </h3>
+            <p class="Content">
+              My CSS architecture prioritized consistency and adaptability
+              across devices. I adopted using flexible grids,flexboxes and media
+              queries to ensure the layout scaled smoothly for desktop and
+              mobiles. Global styles, such as color variables and
+              headings,paragraphs and navigations were defined in a Style.css
+              file, making it easy to update the site’s theme.I tried to follow
+              semantic naming conventions to keep my styles modular and avoid
+              naming conflicts. However, because I wanted each page to have a
+              distinct design, many elements had to be specifically targeted.
+              This led to a large CSS file filled with numerous custom class
+              names. For example, a button component might use the class
+              “.navbuttons”, while a variant like “view project” would have its
+              own unique class. Similarly, a card component might be styled
+              using .content-card for its child elements. This approach taught
+              me the tediousness of css if semantic mark up is not applied
+              properly and the need of Good class/id naming conventions.
+              Although this was the case for some elements this gave me
+              flexibility in design, but at the cost of scalability and
+              simplicity which was all the more worth it. I avoided inline
+              styles entirely, relying instead on external stylesheets for
+              better caching and maintainability. This systematic approach
+              ensured that the UI remained visually cohesive while being easy to
+              tweak during design iterations.
+            </p>
+            <h3 class="essaysubheading">
+              JavaScript: Enhancing Interactivity and Functionality
+            </h3>
+            <p class="Content">
+              JavaScript brought interactivity to my website while maintaining
+              performance and usability. I structured my scripts into reusable
+              modules, such as a Script.js for input checking(DOM) and for menu
+              functionalities, to avoid code duplication, other scripts were
+              specifically named to let observers know each implementation along
+              with its method without confusion .Event delegation was heavily
+              utilized, particularly with semantic elements like buttons, using
+              “onclick” functions. For example, a single event listener attached
+              to the document was responsible for handling clicks on dynamically
+              generated buttons, which improved performance and made the code
+              more maintainable. API requests were handled asynchronously using
+              the Fetch API, enabling efficient data retrieval without freezing
+              the page. This was mainly implemented in the portfolio section,
+              where a GitHub API was used to fetch repository information. I
+              also included loading and error handling to enhance user
+              experience buttons displayed loading text when clicked, and
+              appropriate feedback was provided during data fetching. To
+              optimize performance even more, I used lazy loading for images
+              below the fold. These techniques ensured that interactions felt
+              instantaneous while keeping page load times fast, directly
+              enhancing the UX.
+            </p>
+            <h3 class="essaysubheading">Conclusion</h3>
+            <p class="Content">
+              The UI/UX design strongly shaped my website’s technical
+              foundation. From organized folders to responsive layouts and
+              semantic HTML, each choice balanced user experience with
+              maintainability. Efficient JavaScript and thoughtful metadata
+              enhanced performance and visibility. This alignment between design
+              and development ensured a user-friendly website Although there's a
+              lot of room for improvement.
+            </p>
+          </div>
+        </div>
+        <div class="content-card">
+          <div class="Ecard-content">
+            <h2>Essay 2: Digital Colonialism,geopolitics & the internet</h2>
+            <p class="Content">
+              With the rise and advancement of digital technologies and the tech
+              industry as a whole. From things Artificial intelligence (AI) and
+              big data analytics and Social media platforms. The Internet has
+              transformed economies, societies, and daily life. Yet, these
+              innovations have not been distributed equally. Instead, they often
+              reinforce and allude to existing social inequalities, creating
+              what Lutz refers to as digital divides[1]. These digital divides
+              form a framework for understanding the concept of “digital
+              colonialism.”Providing on how digital inequalities constitute gaps
+              in access and general power that are coherently controlled by big
+              tech companies. This term “digital colonialism” refers to the
+              exercise of imperial power over large populations through systems
+              of rules, designs, languages, cultures, and beliefs that serve
+              dominant interests, allowing control over essential digital
+              infrastructures and data.[2]This paper uses Christoph Lutz’s
+              (2019) article, "Digital Inequalities in the Age of Artificial
+              Intelligence and Big Data," to systematically examine these
+              divides through a three-level framework: disparities in access
+              (first-level), skills and usage (second-level), and outcomes
+              (third-level)[1].To compare and evaluate the relationship between
+              digital colonialism and digital divides, while also examining
+              their impact on the tech industry, global society, and how they
+              influence geopolitical decisions;supported by relevant examples.
+            </p>
+            <p class="Content">
+              Lutz begins his discussion with evaluating evolution of digital
+              inequalities research, structured around three levels of the
+              digital divide, the first being an inequality of access in the
+              digital space/industry. This highlights that "access" goes beyond
+              its traditional meaning,it is not merely about the gap between
+              those who have and those who lack information technology[1], but
+              also refers to the quality, control, and agency users have over
+              that technology. As digital standards evolve, so do expectations
+              around equitable access. Lutz contextualizes this through the
+              example of mobile internet access, noting that in many countries,
+              mobile connectivity is the most common form of access. While this
+              is certainly better than having no access at all, it still
+              represents a significant digital divide. Mobile internet is often
+              slower, less reliable, and offers limited content availability[1],
+              unfairly affecting users in low-income and developing regions.This
+              highlights the geographical inequalities that persist in the
+              digital age[2], where the quality of access,not just its presence
+              shapes participation, opportunity, and even digital literacy,
+              emphasizing that mere internet availability is not enough. The
+              geographical divide presents itself between nations that control
+              digital tech industries and those who rely on foreign technology
+              corporations for basic connectivity and access. This creates a
+              form of digital dependency , where developing regions remain
+              consumers rather than equal participants in the digital economy
+              and be at the mercy of the big tech companies .
+            </p>
+            <p class="Content">
+              The second digital divide that Lutz article extends as a form of
+              digital inequality, it expresses the disparity in digital skills
+              and literacy.This builds on the first digital divide, which
+              focuses on the quality of access, but the second digital divide
+              goes further by highlighting the ability to use digital tools
+              effectively. He alludes that while many are able to use the
+              internet for generic research ,searching and scour social media
+              platforms for entertainment purposes and communication, they are
+              unable to utilize its capabilities into skills that matter and
+              provide value in the digital economy. This gap often exists
+              because users in disadvantaged regions, usually in developing
+              countries,frequently lack the contextual knowledge or digital
+              literacy needed to use technology effectively. This challenge is
+              compounded by the algorithmic control exerted by major tech
+              companies, which can manipulate the data and content users intake.
+              These algorithms shape what people learn, think, and believe
+              online, giving powerful companies control over digital spaces.This
+              is a form of digital colonialism, where powerful countries and
+              tech companies stay in control by limiting others’ access to
+              information. They shape online content to promote their own
+              interests, giving their citizens an advantage while keeping less
+              powerful groups at a disadvantage. A good example is the article
+              comparing Chinese and American TikTok algorithms, showing how
+              content is tailored differently in each region to push specific
+              values or ideas[3]. A google employee for ethical tech use,
+              compared China's approach to TikTok saying that China's
+              algorithm,focused on education, science and things of good use in
+              the digital economy while they shared addictive and “opium”
+              versions of content for other countries except their own[3]. In
+              China, children under 14 are shown educational content such as
+              science experiments and educational videos and their usage is
+              capped at 40 minutes per day[3]. This reflects how technology can
+              be intentionally designed to shape youth development and national
+              values. Compared to the American version of the algorithm, it
+              promotes more entertainment-focused and often addictive content,
+              with far fewer restrictions on the youth. This sparks disparity
+              conversations on the powerful role of geographic and political
+              choices in shaping digital experiences and narratives sparking
+              more social and cultural change . This hence shows how technology
+              can promote nation interests and spark subtle digital colonialism
+              into other nations along with reinforcing specific cultural values
+              and behaviors showing that the internet is not a neutral tool.
+            </p>
+            <p class="Content">
+              The third digital divide that Lutz expresses is embedded in
+              exposing and alluding to systemic constraints and unfair biased
+              outcomes. This is a contrasting relationship between the second
+              and third divide. The second digital divide focuses on disparities
+              in skills and meaningful usage, the third digital divide shifts
+              attention to inequitable outcomes. Simply put, the second digital
+              divide is about having the skills and The third is about whether
+              the system treats you fairly and lets you succeed, even if you
+              have the skills and access.These structural barriers often prevent
+              marginalised groups like this from translating digital engagement
+              into economic, social, or political gains. One of the root causes
+              stems from the systemic power of digital platforms to shape
+              narratives and exploit user data. This involves the large-scale
+              collection and analysis of personal data through algorithms and
+              privacy regulations. Platforms use this data(digital footprint
+              including browsing history, location etc)to train models that
+              personalize content. These algorithmic processes can reinforce
+              existing biases, leading to discriminatory outcomes in areas like
+              job advertising and content exposure. This demonstrates how data
+              exploitation and lack of algorithmic transparency contribute to
+              the third digital divide.This type of control also impacts the
+              socio-economic environment. Marginalized groups, who are more
+              vulnerable to mass data exploitation, are disproportionately
+              affected. They are more likely to be targeted with misleading
+              information, manipulated by algorithmic biases, and more prone to
+              discrimination. This reinforces existing inequalities and shows
+              another way digital colonialism can be pushed . This can lead to
+              digital exclusion,not just in access, but in the quality and
+              fairness of online experiences.
+            </p>
+            <p class="Content">
+              Christoph Lutz’s (2019) article provides a foundation for
+              understanding digital equality and the digital divide. It offers
+              in-depth context on the digital factors that trigger and expose
+              attempts at digital exploitation and digital colonialism. With
+              having read this article, real life examples can be analysed and
+              exposed. A recent example occurred in February 2025, when Google
+              Maps renamed the Gulf of Mexico to the "Gulf of America" for
+              U.S.-based users[4]. President Donald Trump in his first day in
+              office initialised this command as an executive order to federally
+              obtain and overturn its economic and cultural significance to
+              America's national economy[5]. To provide some context: a gulf
+              ,defined by the United Nations ,is an inland sea that extends
+              across a country’s borders[6]. The so-called "Gulf of America"
+              lies in close proximity to the Gulf of Mexico, which raises
+              concerns about who owns the territory and brings potential
+              justifications for the inland claims.The "Gulf of America"
+              incident exemplifies how digital platforms exercise colonial power
+              by unilaterally reshaping geopolitical narratives through
+              algorithmic control and data-driven power. This renaming order
+              disregards the extensive period of the established usage of the
+              name and the water body's significance to multiple nations' and
+              its cultural identity. It demonstrates digital colonialism in
+              action, as tech corporations now assert authority over geographic
+              representation much like colonial powers used to take over
+              specific lands they desired. This controversy reveals how platform
+              algorithms and imperial powers exert dominant geopolitical views.
+              This sidelines local and historical claims, creating modern power
+              imbalances where those who control digital platforms can erase or
+              change not just territory identities but cultural ones as well
+              which further shows the disparity in power in the geopolitical
+              space.
+            </p>
+            <p class="Content">
+              In conclusion, the relationship between digital divides and
+              digital colonialism reveals a deeply rooted imbalance in how
+              digital technologies are accessed, used, and experienced globally.
+              Christoph Lutz’s three-level framework offers a lens to evaluate
+              these inequities;from disparities in access and digital literacy
+              to biased outcomes shaped by systemic structures. As demonstrated
+              through real-world examples like TikTok’s algorithmic control and
+              the controversial renaming of the Gulf of Mexico, digital
+              platforms not only reflect but actively reinforce global power
+              disparities and imbalances. These platforms have evolved into
+              modern instruments of influence that are able to change the shape
+              of cultural, economic, and geopolitical narratives. The term
+              “digital colonialism” captures this reality where control over
+              data, algorithms, and digital infrastructures enables dominant
+              entities to impose their values and interests to disadvantage
+              others.
+            </p>
+            <h6 class="essaysubheading">Refere</h6>
+            <button class="DownloadEssay2">Download</button>
+          </div>
+        </div>
       </div>
     </main>
     <button id="backToTopBtn" aria-label="Back to top">

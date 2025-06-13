@@ -71,6 +71,16 @@ document.querySelector(".DownloadEssay").addEventListener("click", function () {
   link.click();
   document.body.removeChild(link);
 });
+document
+  .querySelector(".DownloadEssay2")
+  .addEventListener("click", function () {
+    const link = document.createElement("a");
+    link.href = "../PDFS/Essay 2.pdf";
+    link.download = "Essay 2.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
 //Async function to load Projects
 // Global async function to handle all project buttons
 async function openProject(url, button) {

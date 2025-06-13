@@ -303,6 +303,16 @@ h4 {
   margin: 0%;
   padding: 2%;
 }
+.essaysubheading {
+  color: #003249;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: medium;
+  margin: 0;
+}
+
 h5 {
   color: white;
   font-weight: bold;
@@ -554,7 +564,8 @@ nav {
 .Download-btn:hover {
   background-color: #1570cd;
 }
-.DownloadEssay {
+.DownloadEssay,
+.DownloadEssay2 {
   background-color: #007ea7;
   color: white;
   border: none;
@@ -567,7 +578,8 @@ nav {
   transition: background-color 0.3s ease;
   width: 100%;
 }
-.DownloadEssay:hover {
+.DownloadEssay,
+.DownloadEssay2:hover {
   background-color: #1570cd;
 }
 /* ================= STYLES FOR Footer ================= */
@@ -788,10 +800,51 @@ h6 {
   .tag {
     font-size: 1.5rem;
   }
-}
-.find {
-  padding-right: 100px;
-  font-size: 2.2rem;
+  footer {
+    padding: 40px 15px;
+  }
+
+  .Footcontainer {
+    width: 90%;
+  }
+
+  .col-1 {
+    flex-basis: 45%;
+    margin-bottom: 30px;
+  }
+
+  .col-2,
+  .col-3 {
+    flex-basis: 45%;
+  }
+
+  .LogoContainer img {
+    width: 11vh;
+    height: 8vh;
+  }
+
+  .LogoContainer h6 {
+    font-size: 1.6rem;
+  }
+
+  .col-1 p {
+    font-size: 1.4rem;
+  }
+
+  .social-icons a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+
+  .footer-2 {
+    font-size: 1.2rem;
+    padding-top: 40px;
+  }
+  .find {
+    padding-right: 100px;
+    font-size: 2.2rem;
+  }
 }
 
 /* Small devices (phones, 767px and below) */
@@ -942,5 +995,44 @@ h6 {
     font-size: 1.8rem;
     text-align: center;
     padding-left: 20px; /* Add left padding for balance */
+  }
+  footer {
+    padding: 25px 5px;
+  }
+
+  .col-1 p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .LogoContainer img {
+    width: 7vh;
+    height: 5vh;
+  }
+
+  .LogoContainer h6 {
+    font-size: 1.3rem;
+  }
+
+  h6 {
+    font-size: 1.3rem;
+  }
+
+  .col-2 ul li,
+  .col-3 ul li {
+    margin-bottom: 8px;
+  }
+
+  .social-icons a {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+  }
+
+  .footer-2 {
+    font-size: 1rem;
+    padding-top: 20px;
   }
 }
